@@ -5,6 +5,7 @@ import {
   NBackSettingsType,
   NextStepSettings,
   PhotoDiodeSettings,
+  ValidationTaskSettingsType,
 } from '@/modules/context/SettingsContext';
 
 /**
@@ -119,6 +120,18 @@ interface State {
   practiceTargetCount: number; // How many target trials (should-respond)
   practiceHitCount: number; // Responded correctly on target
   practiceFalsePositiveCount: number; // Responded when no target
+  // Stimulus validation fields
+  validationStimuliList: string[]; // Full list of stimulus paths
+  validationBlocks: string[][]; // Randomized blocks of stimuli
+  currentBlockIndex: number;
+  currentStimulusIndexInBlock: number;
+}
+
+export interface StimulusBlock {
+  blockIndex: number;
+  stimuli: string[];
+  startTrialIndex: number;
+  endTrialIndex: number;
 }
 
 export class ExperimentState {
@@ -134,12 +147,15 @@ export class ExperimentState {
 
   private nextStepSettings: NextStepSettings;
 
+  private validationTaskSettings: ValidationTaskSettingsType;
+
   constructor(settings: AllSettingsType) {
     this.generalSettings = settings.generalSettings;
     this.nBackSettings = settings.nBackSettings;
     this.breakSettings = settings.breakSettings;
     this.photoDiodeSettings = settings.photoDiodeSettings;
     this.nextStepSettings = settings.nextStepSettings;
+    this.validationTaskSettings = settings.validationTaskSettings;
 
     // Initialize with empty state - will be set when experiment starts
     this.state = {
@@ -150,6 +166,10 @@ export class ExperimentState {
       practiceTargetCount: 0,
       practiceHitCount: 0,
       practiceFalsePositiveCount: 0,
+      validationStimuliList: [],
+      validationBlocks: [],
+      currentBlockIndex: 0,
+      currentStimulusIndexInBlock: 0,
     };
   }
 
@@ -174,6 +194,10 @@ export class ExperimentState {
     return this.nextStepSettings;
   }
 
+  getValidationTaskSettings(): ValidationTaskSettingsType {
+    return this.validationTaskSettings;
+  }
+
   getAllSettings(): AllSettingsType {
     return {
       generalSettings: this.generalSettings,
@@ -181,6 +205,7 @@ export class ExperimentState {
       breakSettings: this.breakSettings,
       photoDiodeSettings: this.photoDiodeSettings,
       nextStepSettings: this.nextStepSettings,
+      validationTaskSettings: this.validationTaskSettings,
     };
   }
 
@@ -238,10 +263,6 @@ export class ExperimentState {
 
   getSequence(): number[] {
     return this.state.sequence;
-  }
-
-  getCurrentStimulus(): number {
-    return this.state.sequence[this.state.currentTrialIndex];
   }
 
   getCurrentTrialIndex(): number {
@@ -343,5 +364,145 @@ export class ExperimentState {
 
   getRemainingTrials(): number {
     return this.state.sequence.length - this.state.currentTrialIndex;
+  }
+
+  /**
+   * Fetches the stimulus manifest from the URL specified in validation settings
+   * @returns Promise resolving to an array of stimulus paths
+   */
+  async fetchStimulusManifest(): Promise<string[]> {
+    const manifestUrl = this.validationTaskSettings.stimuliManifestUrl;
+    try {
+      const response = await fetch(manifestUrl);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch manifest: ${response.statusText}`);
+      }
+      const data = (await response.json()) as {
+        stimuli: Array<{ filename: string }>;
+      };
+      // Extract paths from manifest
+      const assetPath = '/assets/images/stimuli/';
+      return data.stimuli.map((s) => `${assetPath}${s.filename}`);
+    } catch (error) {
+      console.error('Error fetching stimulus manifest:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Initialize stimulus validation task with stimuli list
+   * Creates randomized blocks of specified size
+   * @param stimuliList - Array of stimulus paths
+   */
+  initializeValidationTask(stimuliList: string[]): void {
+    this.state.validationStimuliList = stimuliList;
+    this.state.validationBlocks = ExperimentState.createRandomizedBlocks(
+      stimuliList,
+      this.validationTaskSettings.blockSize,
+    );
+    this.state.currentBlockIndex = 0;
+    this.state.currentStimulusIndexInBlock = 0;
+  }
+
+  /**
+   * Creates randomized blocks of stimuli
+   * @param stimuli - Array of stimulus paths
+   * @param blockSize - Number of stimuli per block
+   * @returns Array of randomized blocks
+   */
+  private static createRandomizedBlocks(
+    stimuli: string[],
+    blockSize: number,
+  ): string[][] {
+    const blocks: string[][] = [];
+    const shuffled = [...stimuli].sort(() => Math.random() - 0.5); // Fisher-Yates shuffle
+
+    for (let i = 0; i < shuffled.length; i += blockSize) {
+      blocks.push(shuffled.slice(i, i + blockSize));
+    }
+
+    return blocks;
+  }
+
+  /**
+   * Get current block of stimuli
+   */
+  getCurrentBlock(): string[] | null {
+    if (
+      this.state.currentBlockIndex >= 0 &&
+      this.state.currentBlockIndex < this.state.validationBlocks.length
+    ) {
+      return this.state.validationBlocks[this.state.currentBlockIndex];
+    }
+    return null;
+  }
+
+  /**
+   * Get current stimulus in the current block
+   */
+  getCurrentStimulus(): string | null {
+    const block = this.getCurrentBlock();
+    if (
+      block &&
+      this.state.currentStimulusIndexInBlock >= 0 &&
+      this.state.currentStimulusIndexInBlock < block.length
+    ) {
+      return block[this.state.currentStimulusIndexInBlock];
+    }
+    return null;
+  }
+
+  /**
+   * Advance to next stimulus in current block
+   */
+  advanceStimulusInBlock(): void {
+    const block = this.getCurrentBlock();
+    if (block) {
+      this.state.currentStimulusIndexInBlock += 1;
+    }
+  }
+
+  /**
+   * Move to next block
+   */
+  advanceToNextBlock(): void {
+    this.state.currentBlockIndex += 1;
+    this.state.currentStimulusIndexInBlock = 0;
+  }
+
+  /**
+   * Check if all blocks are completed
+   */
+  isValidationTaskComplete(): boolean {
+    return this.state.currentBlockIndex >= this.state.validationBlocks.length;
+  }
+
+  /**
+   * Get total number of blocks
+   */
+  getTotalBlocks(): number {
+    return this.state.validationBlocks.length;
+  }
+
+  /**
+   * Get current block index (0-based)
+   */
+  getCurrentBlockIndex(): number {
+    return this.state.currentBlockIndex;
+  }
+
+  /**
+   * Get total stimuli in current block
+   */
+  getStimuliCountInCurrentBlock(): number {
+    const block = this.getCurrentBlock();
+    return block ? block.length : 0;
+  }
+
+  /**
+   * Get current stimulus index within block (0-based)
+   */
+  getCurrentStimulusIndexInBlock(): number {
+    return this.state.currentStimulusIndexInBlock;
   }
 }

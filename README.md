@@ -109,4 +109,3 @@ VITE_VERSION=latest
 
 # dont open browser
 BROWSER=none
-```

@@ -38,6 +38,7 @@ It is efficient in renders and supports the use of theme values.
 
 ```tsx
 import { FC } from 'react';
+
 import { styled } from '@mui/material';
 
 const StyledDiv = styled('div')({
@@ -51,6 +52,7 @@ export const SomeComponent: FC = () => <StyledDiv>Some content</StyledDiv>;
 
 ```tsx
 import { FC } from 'react';
+
 import { styled } from '@mui/material';
 
 const StyledDiv = styled('div')(({ theme }) => ({
@@ -64,7 +66,8 @@ export const SomeComponent: FC = () => <StyledDiv>Some content</StyledDiv>;
 
 ```tsx
 import { FC } from 'react';
-import { styled, Stack } from '@mui/material';
+
+import { Stack, styled } from '@mui/material';
 
 const StyledStack = styled(Stack)(({ theme }) => ({
   margin: theme.spacing(2), // use the theme values here

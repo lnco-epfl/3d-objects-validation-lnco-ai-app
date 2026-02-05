@@ -11,6 +11,7 @@ import {
   NBackSettingsType,
   NextStepSettings,
   PhotoDiodeSettings,
+  ValidationTaskSettingsType,
   useSettings,
 } from '../context/SettingsContext';
 import BreakSettingsView from './BreakSettingsView';
@@ -18,6 +19,7 @@ import GeneralSettingsView from './GeneralSettingsView';
 import NBackSettingsView from './NBackSettingsView';
 import NextStepSettingsView from './NextStepSettings';
 import PhotoDiodeSettingsView from './PhotoDiodeSettingsView';
+import StimulusValidationSettingsView from './StimulusValidationSettingsView';
 
 const SettingsView: FC = () => {
   const {
@@ -26,6 +28,7 @@ const SettingsView: FC = () => {
     breakSettings: breakSettingsSaved,
     photoDiodeSettings: photoDiodeSettingsSaved,
     nextStepSettings: nextStepSettingsSaved,
+    validationTaskSettings: validationTaskSettingsSaved,
     saveSettings,
   } = useSettings();
 
@@ -38,6 +41,9 @@ const SettingsView: FC = () => {
   const [nextStepSettings, updateNextStepSettings] = useState<NextStepSettings>(
     nextStepSettingsSaved,
   );
+  const [validationTaskSettings] = useState<ValidationTaskSettingsType>(
+    validationTaskSettingsSaved,
+  );
 
   const saveAllSettings = (): void => {
     saveSettings('generalSettings', generalSettings);
@@ -45,6 +51,7 @@ const SettingsView: FC = () => {
     saveSettings('breakSettings', breakSettings);
     saveSettings('photoDiodeSettings', photoDiodeSettings);
     saveSettings('nextStepSettings', nextStepSettings);
+    saveSettings('validationTaskSettings', validationTaskSettings);
   };
 
   const disableSave = useMemo(() => {
@@ -53,7 +60,8 @@ const SettingsView: FC = () => {
       isEqual(nBackSettingsSaved, nBackSettings) &&
       isEqual(breakSettingsSaved, breakSettings) &&
       isEqual(photoDiodeSettingsSaved, photoDiodeSettings) &&
-      isEqual(nextStepSettingsSaved, nextStepSettings)
+      isEqual(nextStepSettingsSaved, nextStepSettings) &&
+      isEqual(validationTaskSettingsSaved, validationTaskSettings)
     ) {
       return true;
     }
@@ -69,6 +77,8 @@ const SettingsView: FC = () => {
     photoDiodeSettings,
     nextStepSettingsSaved,
     nextStepSettings,
+    validationTaskSettingsSaved,
+    validationTaskSettings,
   ]);
 
   return (
@@ -84,6 +94,7 @@ const SettingsView: FC = () => {
         photoDiodeSettings={photoDiodeSettings}
         onChange={updatePhotoDiodeSettings}
       />
+      <StimulusValidationSettingsView />
       <NextStepSettingsView
         nextStepSettings={nextStepSettings}
         onChange={updateNextStepSettings}

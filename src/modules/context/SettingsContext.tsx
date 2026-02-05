@@ -43,6 +43,17 @@ export type NextStepSettings = {
   linkText: string;
 };
 
+export type ValidationTaskSettingsType = {
+  blockSize: number; // number of stimuli per block (default: 40)
+  breakDuration: number; // seconds (default: 120 for 2 minutes)
+  stimuliManifestUrl: string; // URL to stimulus manifest JSON (default: '/assets/images/stimuli/manifest.json')
+  displayDuration: number; // milliseconds stimulus is shown (default: 3000)
+  questionTypes: Array<'slider' | 'text' | 'button11'>; // types of questions to ask per stimulus
+  sliderMin?: number; // slider min value
+  sliderMax?: number; // slider max value
+  sliderLabels?: string[]; // labels for slider endpoints
+};
+
 // mapping between Setting names and their data type
 export type AllSettingsType = {
   generalSettings: GeneralSettingsType;
@@ -50,6 +61,7 @@ export type AllSettingsType = {
   breakSettings: BreakSettingsType;
   photoDiodeSettings: PhotoDiodeSettings;
   nextStepSettings: NextStepSettings;
+  validationTaskSettings: ValidationTaskSettingsType;
 };
 
 // default values for the data property of settings by name
@@ -84,6 +96,16 @@ const defaultSettingsValues: AllSettingsType = {
     link: '',
     linkText: '',
   },
+  validationTaskSettings: {
+    blockSize: 40,
+    breakDuration: 120,
+    stimuliManifestUrl: '/assets/images/stimuli/manifest.json',
+    displayDuration: 3000,
+    questionTypes: ['slider'],
+    sliderMin: 0,
+    sliderMax: 100,
+    sliderLabels: ['Not confident', 'Very confident'],
+  },
 };
 
 // list of the settings names
@@ -93,6 +115,7 @@ const ALL_SETTING_NAMES = [
   'breakSettings',
   'photoDiodeSettings',
   'nextStepSettings',
+  'validationTaskSettings',
 ] as const;
 
 // automatically generated types

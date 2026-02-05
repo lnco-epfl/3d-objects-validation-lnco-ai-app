@@ -71,6 +71,33 @@
       "PRESS_TO_CONTINUE": "Or press spacebar to continue immediately"
     },
     "PROGRESS_BAR_MESSAGE": "Completion Progress",
+    "VALIDATION": {
+      "WELCOME_TITLE": "Stimulus Validation Task",
+      "WELCOME_MESSAGE": "Thank you for participating. In this task, you will view images and answer questions about them.",
+      "TASK_DESCRIPTION_TITLE": "Task Overview",
+      "TASK_DESCRIPTION_1": "You will see a series of images, one at a time.",
+      "TASK_DESCRIPTION_2": "After each image, you will be asked to answer one or more questions about what you saw.",
+      "INSTRUCTIONS_TITLE": "Instructions",
+      "INSTRUCTIONS_OVERVIEW": "Please pay close attention to each image. Answer the questions honestly and to the best of your ability.",
+      "INSTRUCTIONS_QUESTIONS": "Question Types:",
+      "SLIDER_INSTRUCTION": "For slider questions, move the slider to indicate your response on the scale.",
+      "TEXT_INSTRUCTION": "For text questions, type your response in the text box.",
+      "BUTTON11_INSTRUCTION": "For choice questions, select one of the 11 buttons that best represents your response.",
+      "SLIDER_QUESTION": "How confident are you in your rating?",
+      "TEXT_QUESTION": "Please describe what you observed:",
+      "TEXT_PLACEHOLDER": "Type your response here...",
+      "BUTTON11_QUESTION": "How would you rate this stimulus?",
+      "BUTTON11_LEFT": "Not at all",
+      "BUTTON11_RIGHT": "Extremely",
+      "BREAK_TITLE": "Take a Break",
+      "BREAK_MESSAGE": "You have completed a block of stimuli. Feel free to take a short break.",
+      "BREAK_REMAINING": "Remaining blocks:",
+      "BREAK_COUNTDOWN": "Resuming in:",
+      "BREAK_SKIP": "Or press spacebar to continue immediately.",
+      "COMPLETION_TITLE": "Task Complete",
+      "COMPLETION_MESSAGE": "Thank you for completing the stimulus validation task!",
+      "COMPLETION_STATS": "You viewed"
+    },
     "SETTINGS": {
       "NBACK_TITLE": "N-Back Task Settings",
       "NBACK_LEVEL": "N-Back Level",
@@ -93,7 +120,22 @@
       "BREAK_FREQUENCY": "Break every X trials",
       "BREAK_FREQUENCY_HELP": "Number of trials between breaks (5-100)",
       "BREAK_DURATION": "Break duration (seconds)",
-      "BREAK_DURATION_HELP": "Minimum seconds for break (10-300)"
+      "BREAK_DURATION_HELP": "Minimum seconds for break (10-300)",
+      "STIMULUS_VALIDATION_TITLE": "Stimulus Validation Task Settings",
+      "BLOCK_SIZE": "Block Size",
+      "BLOCK_SIZE_HELP": "Number of stimuli per block (10-100, default: 40)",
+      "STIMULUS_DISPLAY_DURATION": "Stimulus Display Duration (ms)",
+      "STIMULUS_DISPLAY_DURATION_HELP": "How long each stimulus is displayed (500-10000 ms, default: 3000)",
+      "STIMULI_MANIFEST_URL": "Stimuli Manifest URL",
+      "STIMULI_MANIFEST_URL_HELP": "URL to JSON manifest file listing all stimuli",
+      "QUESTION_TYPES": "Question Types",
+      "SLIDER_QUESTION": "Include slider question (0-100 scale)",
+      "TEXT_QUESTION": "Include free-text question",
+      "BUTTON11_QUESTION": "Include 11-point button choice",
+      "SLIDER_MIN": "Slider Minimum Value",
+      "SLIDER_MAX": "Slider Maximum Value",
+      "SLIDER_LABELS": "Slider Labels (separated by |)",
+      "SLIDER_LABELS_HELP": "Two labels for left and right endpoints, separated by |"
     }
   }
 }

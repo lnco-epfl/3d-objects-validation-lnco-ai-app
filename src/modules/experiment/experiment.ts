@@ -18,6 +18,7 @@ import './jspsych/i18n';
 import { buildIntroduction } from './parts/introduction';
 import { buildPractice } from './parts/practice';
 import { buildMainTask } from './parts/task-core';
+import { buildValidationTask } from './parts/validation';
 import './styles/main.scss';
 import { PROGRESS_BAR_MESSAGE } from './utils/constants';
 import { Timeline, Trial } from './utils/types';
@@ -57,6 +58,19 @@ export async function run({
 }): Promise<JsPsych> {
   // Initialize experiment state
   const state = new ExperimentState(input.settings);
+
+  // Fetch stimulus manifest if using validation task
+  let validationStimulusImages: string[] = [];
+  if (state.getValidationTaskSettings().stimuliManifestUrl) {
+    validationStimulusImages = await state.fetchStimulusManifest();
+  }
+
+  // Merge asset paths with validation stimuli
+  const allAssetPaths = {
+    images: [...assetPaths.images, ...validationStimulusImages],
+    audio: assetPaths.audio,
+    video: assetPaths.video,
+  };
 
   // Setup photo-diode if enabled
   if (state.getPhotoDiodeSettings().usePhotoDiode !== 'off') {
@@ -183,7 +197,7 @@ export async function run({
 
   timeline.push({
     type: PreloadPlugin,
-    assetPaths,
+    assetPaths: allAssetPaths,
     max_load_time: 120000,
     on_load() {
       addFullscreenButton();
@@ -209,16 +223,38 @@ export async function run({
     });
   }
 
-  // Main task
-  timeline.push({
-    timeline: buildMainTask(state, updateDataWithSettings, jsPsych),
-    on_timeline_start() {
-      state.startMainTask();
-      if (jsPsych.progressBar) {
-        jsPsych.progressBar.progress = 0.5;
-      }
-    },
-  });
+  // Main task - choose between validation and N-back
+  const useValidationTask =
+    validationStimulusImages.length > 0 &&
+    state.getValidationTaskSettings().blockSize > 0;
+
+  if (useValidationTask) {
+    // Stimulus validation task
+    timeline.push({
+      timeline: buildValidationTask(
+        state,
+        validationStimulusImages,
+        updateDataWithSettings,
+        jsPsych,
+      ),
+      on_timeline_start() {
+        if (jsPsych.progressBar) {
+          jsPsych.progressBar.progress = 0.15;
+        }
+      },
+    });
+  } else {
+    // N-back task
+    timeline.push({
+      timeline: buildMainTask(state, updateDataWithSettings, jsPsych),
+      on_timeline_start() {
+        state.startMainTask();
+        if (jsPsych.progressBar) {
+          jsPsych.progressBar.progress = 0.5;
+        }
+      },
+    });
+  }
 
   // End page
   if (state.getNextStepSettings().linkToNextPage) {

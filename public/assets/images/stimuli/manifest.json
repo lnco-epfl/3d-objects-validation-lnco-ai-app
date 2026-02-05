@@ -1,0 +1,149 @@
+{
+  "stimuli": [
+    {
+      "id": "stimulus-001",
+      "filename": "Screenshot_CameraObject_2026-01-23_15-40-56.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-002",
+      "filename": "Screenshot_ClapperBoardObject_2026-01-23_15-41-10.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-003",
+      "filename": "Screenshot_DjembeObject_2026-01-23_15-41-25.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-004",
+      "filename": "Screenshot_DummyObject_2026-01-23_15-41-40.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-005",
+      "filename": "Screenshot_EaselObject_2026-01-23_15-41-54.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-006",
+      "filename": "Screenshot_FireworkObject_2026-01-23_15-42-09.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-007",
+      "filename": "Screenshot_GuitarObject_2026-01-23_15-42-24.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-008",
+      "filename": "Screenshot_HarpObject_2026-01-23_15-42-38.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-009",
+      "filename": "Screenshot_HeadphonesObject_2026-01-23_15-42-53.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-010",
+      "filename": "Screenshot_InkObject_2026-01-23_15-43-08.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-011",
+      "filename": "Screenshot_JoystickObject_2026-01-23_15-43-22.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-012",
+      "filename": "Screenshot_LampObject_2026-01-23_15-43-37.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-013",
+      "filename": "Screenshot_LaptopObject_2026-01-23_15-43-51.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-014",
+      "filename": "Screenshot_MaracasObject_2026-01-23_15-44-06.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-015",
+      "filename": "Screenshot_MicrophoneObject_2026-01-23_15-44-21.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-016",
+      "filename": "Screenshot_Music column-1Object_2026-01-23_15-44-35.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-017",
+      "filename": "Screenshot_Music column-2Object_2026-01-23_15-44-50.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-018",
+      "filename": "Screenshot_MusicCenterObject_2026-01-23_15-45-05.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-019",
+      "filename": "Screenshot_PaletteObject_2026-01-23_15-45-19.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-020",
+      "filename": "Screenshot_SaxophoneObject_2026-01-23_15-45-34.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-021",
+      "filename": "Screenshot_SetOfBrushesObject_2026-01-23_15-45-49.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-022",
+      "filename": "Screenshot_SprayCansObject_2026-01-23_15-46-03.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-023",
+      "filename": "Screenshot_TheatreMasksObject_2026-01-23_15-46-20.png",
+      "type": "image",
+      "category": "object"
+    },
+    {
+      "id": "stimulus-024",
+      "filename": "Screenshot_TypewriterObject_2026-01-23_15-46-35.png",
+      "type": "image",
+      "category": "object"
+    }
+  ]
+}
+
