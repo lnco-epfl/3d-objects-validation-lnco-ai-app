@@ -62,7 +62,16 @@ export async function run({
   // Fetch stimulus manifest if using validation task
   let validationStimulusImages: string[] = [];
   if (state.getValidationTaskSettings().stimuliManifestUrl) {
+    // console.log(
+    //   'Fetching stimulus manifest from:',
+    //   state.getValidationTaskSettings().stimuliManifestUrl,
+    // );
     validationStimulusImages = await state.fetchStimulusManifest();
+    // console.log(
+    //   'Fetched stimulus images:',
+    //   validationStimulusImages.length,
+    //   validationStimulusImages.slice(0, 3),
+    // );
   }
 
   // Merge asset paths with validation stimuli
@@ -224,9 +233,14 @@ export async function run({
   }
 
   // Main task - choose between validation and N-back
+  const validationSettings = state.getValidationTaskSettings();
   const useValidationTask =
-    validationStimulusImages.length > 0 &&
-    state.getValidationTaskSettings().blockSize > 0;
+    validationStimulusImages.length > 0 && validationSettings.blockSize > 0;
+  // console.log('Validation task check:', {
+  //   stimulusImagesLength: validationStimulusImages.length,
+  //   blockSize: validationSettings.blockSize,
+  //   useValidationTask,
+  // });
 
   if (useValidationTask) {
     // Stimulus validation task
