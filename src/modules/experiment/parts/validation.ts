@@ -36,7 +36,7 @@ export function buildValidationIntroduction(state: ExperimentState): Timeline {
         <p style="font-size: 0.8em; color: #666;">Press spacebar to continue</p>
       </div>
     `,
-    choices: ['space'],
+    choices: [' '],
   } as Trial);
 
   // Task description
@@ -50,7 +50,7 @@ export function buildValidationIntroduction(state: ExperimentState): Timeline {
         <p style="font-size: 0.8em; color: #666;">Press spacebar to continue</p>
       </div>
     `,
-    choices: ['space'],
+    choices: [' '],
   } as Trial);
 
   // Instructions
@@ -76,7 +76,7 @@ export function buildValidationIntroduction(state: ExperimentState): Timeline {
           <p style="font-size: 0.8em; color: #666;">Press spacebar to continue</p>
         </div>
       `,
-      choices: ['space'],
+      choices: [' '],
     } as Trial);
   }
 
@@ -212,7 +212,7 @@ export function buildValidationBreak(
         <p style="font-size: 0.8em; color: #888;">${t('VALIDATION.BREAK_SKIP')}</p>
       </div>
     `,
-    choices: ['space', 'Enter'],
+    choices: [' ', 'Enter'],
     trial_duration: breakDuration * 1000,
     on_load() {
       // Countdown timer
@@ -252,7 +252,7 @@ export function buildValidationCompletion(state: ExperimentState): Timeline {
         <p style="font-size: 0.8em; color: #666;">Press spacebar to continue</p>
       </div>
     `,
-    choices: ['space'],
+    choices: [' '],
   } as Trial);
 
   return timeline;

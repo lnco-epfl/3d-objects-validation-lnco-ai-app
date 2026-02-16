@@ -62,16 +62,7 @@ export async function run({
   // Fetch stimulus manifest if using validation task
   let validationStimulusImages: string[] = [];
   if (state.getValidationTaskSettings().stimuliManifestUrl) {
-    // console.log(
-    //   'Fetching stimulus manifest from:',
-    //   state.getValidationTaskSettings().stimuliManifestUrl,
-    // );
     validationStimulusImages = await state.fetchStimulusManifest();
-    // console.log(
-    //   'Fetched stimulus images:',
-    //   validationStimulusImages.length,
-    //   validationStimulusImages.slice(0, 3),
-    // );
   }
 
   // Merge asset paths with validation stimuli
@@ -236,14 +227,18 @@ export async function run({
   const validationSettings = state.getValidationTaskSettings();
   const useValidationTask =
     validationStimulusImages.length > 0 && validationSettings.blockSize > 0;
-  // console.log('Validation task check:', {
-  //   stimulusImagesLength: validationStimulusImages.length,
-  //   blockSize: validationSettings.blockSize,
-  //   useValidationTask,
-  // });
+  // comment this console log once the trial is working
+  // eslint-disable-next-line no-console
+  console.log('Validation task check:', {
+    stimulusImagesLength: validationStimulusImages.length,
+    blockSize: validationSettings.blockSize,
+    useValidationTask,
+  });
 
   if (useValidationTask) {
     // Stimulus validation task
+    // eslint-disable-next-line no-console
+    console.log('Using Validation main task timeline'); // delete this line once the trial is working
     timeline.push({
       timeline: buildValidationTask(
         state,
@@ -259,6 +254,8 @@ export async function run({
     });
   } else {
     // N-back task
+    // eslint-disable-next-line no-console
+    console.log('Using N-back main task timeline'); // delete this line once the trial is working
     timeline.push({
       timeline: buildMainTask(state, updateDataWithSettings, jsPsych),
       on_timeline_start() {

@@ -97,7 +97,7 @@ const defaultSettingsValues: AllSettingsType = {
     linkText: '',
   },
   validationTaskSettings: {
-    blockSize: 40,
+    blockSize: 6, // 40
     breakDuration: 120,
     stimuliManifestUrl: '/assets/images/stimuli/manifest.json',
     displayDuration: 3000,
