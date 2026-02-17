@@ -3,6 +3,7 @@
  * Supports likert/slider, text, and 11-button choice questions
  */
 import jsPsychHtmlButtonResponse from '@jspsych/plugin-html-button-response';
+import jsPsychHtmlSliderResponse from '@jspsych/plugin-html-slider-response';
 import jsPsychSurveyLikert from '@jspsych/plugin-survey-likert';
 import jsPsychSurveyText from '@jspsych/plugin-survey-text';
 
@@ -55,6 +56,21 @@ export function createSliderQuestion(params: SliderQuestionParams): any {
         required: true,
       },
     ],
+    button_label: 'Continue',
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function createHtmlSliderQuestion(params: SliderQuestionParams): any {
+  return {
+    type: jsPsychHtmlSliderResponse,
+    stimulus: `<p>${params.question}</p>`,
+    // stimulus: `<p>'I recognise the object'</p>`,
+    min: 0,
+    max: 100,
+    start: 50,
+    step: 1,
+    labels: ['Not well', 'Very well'],
     button_label: 'Continue',
   };
 }

@@ -15,22 +15,38 @@ import {
   useSettings,
 } from '../context/SettingsContext';
 
-const StimulusValidationSettingsView: FC = () => {
+interface StimulusValidationSettingsViewProps {
+  validationTaskSettings?: ValidationTaskSettingsType;
+  onChange?: (settings: ValidationTaskSettingsType) => void;
+}
+
+const StimulusValidationSettingsView: FC<
+  StimulusValidationSettingsViewProps
+> = ({ validationTaskSettings: propSettings, onChange }) => {
   const { t } = useTranslation();
-  const { validationTaskSettings, saveSettings } = useSettings();
+  const { validationTaskSettings: contextSettings, saveSettings } =
+    useSettings();
+
+  // Use props if provided (from SettingsView), otherwise use context
+  const validationTaskSettings = propSettings || contextSettings;
 
   const handleChange = (
     setting: keyof ValidationTaskSettingsType,
     value: unknown,
   ): void => {
-    saveSettings('validationTaskSettings', {
+    const updated = {
       ...validationTaskSettings,
       [setting]: value,
-    });
+    };
+    if (onChange) {
+      onChange(updated);
+    } else {
+      saveSettings('validationTaskSettings', updated);
+    }
   };
 
   const handleQuestionTypeToggle = (
-    questionType: 'slider' | 'text' | 'button11',
+    questionType: 'slider' | 'text' | 'button11' | 'html_slider',
   ): void => {
     const questionTypes = validationTaskSettings.questionTypes || [];
     const updated = questionTypes.includes(questionType)
@@ -132,6 +148,18 @@ const StimulusValidationSettingsView: FC = () => {
             />
           }
           label={t('SETTINGS.BUTTON11_QUESTION')}
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={
+                validationTaskSettings.questionTypes?.includes('html_slider') ||
+                false
+              }
+              onChange={() => handleQuestionTypeToggle('html_slider')}
+            />
+          }
+          label={t('SETTINGS.HTML_SLIDER_QUESTION')}
         />
       </FormGroup>
 

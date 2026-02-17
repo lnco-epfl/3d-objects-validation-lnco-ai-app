@@ -16,7 +16,7 @@ import { AllSettingsType, NextStepSettings } from '../context/SettingsContext';
 import { ExperimentState } from './jspsych/experiment-state-class';
 import './jspsych/i18n';
 import { buildIntroduction } from './parts/introduction';
-import { buildPractice } from './parts/practice';
+// import { buildPractice } from './parts/practice';
 import { buildMainTask } from './parts/task-core';
 import { buildValidationTask } from './parts/validation';
 import './styles/main.scss';
@@ -214,14 +214,14 @@ export async function run({
   });
 
   // Practice
-  if (!state.getGeneralSettings().skipPractice) {
+  /* if (!state.getGeneralSettings().skipPractice) {
     timeline.push({
       timeline: buildPractice(state, updateDataWithSettings, jsPsych),
       on_timeline_start() {
         if (jsPsych.progressBar) jsPsych.progressBar.progress = 0.2;
       },
     });
-  }
+  } */
 
   // Main task - choose between validation and N-back
   const validationSettings = state.getValidationTaskSettings();

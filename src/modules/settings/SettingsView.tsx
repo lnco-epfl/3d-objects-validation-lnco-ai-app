@@ -41,9 +41,8 @@ const SettingsView: FC = () => {
   const [nextStepSettings, updateNextStepSettings] = useState<NextStepSettings>(
     nextStepSettingsSaved,
   );
-  const [validationTaskSettings] = useState<ValidationTaskSettingsType>(
-    validationTaskSettingsSaved,
-  );
+  const [validationTaskSettings, updateValidationTaskSettings] =
+    useState<ValidationTaskSettingsType>(validationTaskSettingsSaved);
 
   const saveAllSettings = (): void => {
     saveSettings('generalSettings', generalSettings);
@@ -94,7 +93,10 @@ const SettingsView: FC = () => {
         photoDiodeSettings={photoDiodeSettings}
         onChange={updatePhotoDiodeSettings}
       />
-      <StimulusValidationSettingsView />
+      <StimulusValidationSettingsView
+        validationTaskSettings={validationTaskSettings}
+        onChange={updateValidationTaskSettings}
+      />
       <NextStepSettingsView
         nextStepSettings={nextStepSettings}
         onChange={updateNextStepSettings}

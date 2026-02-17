@@ -3667,6 +3667,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jspsych/plugin-html-slider-response@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@jspsych/plugin-html-slider-response@npm:2.1.0"
+  peerDependencies:
+    jspsych: ">=7.1.0"
+  checksum: 10/4631614ab3c4c111723178aef1941ada49c8414ea5f66dcb291c3b45e576f5457b904d22b6b6dd8534f9c55266e14b083ef0f1d11d9797c1abbc0f30fb13c690
+  languageName: node
+  linkType: hard
+
 "@jspsych/plugin-preload@npm:^1.1.2":
   version: 1.1.3
   resolution: "@jspsych/plugin-preload@npm:1.1.3"
@@ -11639,6 +11648,7 @@ __metadata:
     "@jspsych/plugin-fullscreen": "npm:^1.1.2"
     "@jspsych/plugin-html-button-response": "npm:^2.0.0"
     "@jspsych/plugin-html-keyboard-response": "npm:^2.1.0"
+    "@jspsych/plugin-html-slider-response": "npm:^2.1.0"
     "@jspsych/plugin-preload": "npm:^1.1.2"
     "@jspsych/plugin-survey-likert": "npm:^1.1.3"
     "@jspsych/plugin-survey-text": "npm:^2.0.0"

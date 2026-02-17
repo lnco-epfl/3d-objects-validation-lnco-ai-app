@@ -96,7 +96,8 @@
       "BREAK_SKIP": "Or press spacebar to continue immediately.",
       "COMPLETION_TITLE": "Task Complete",
       "COMPLETION_MESSAGE": "Thank you for completing the stimulus validation task!",
-      "COMPLETION_STATS": "You viewed"
+      "COMPLETION_STATS": "You viewed",
+      "HTML_SLIDER_QUESTION": "I recognise this object"
     },
     "SETTINGS": {
       "NBACK_TITLE": "N-Back Task Settings",
@@ -135,7 +136,8 @@
       "SLIDER_MIN": "Slider Minimum Value",
       "SLIDER_MAX": "Slider Maximum Value",
       "SLIDER_LABELS": "Slider Labels (separated by |)",
-      "SLIDER_LABELS_HELP": "Two labels for left and right endpoints, separated by |"
+      "SLIDER_LABELS_HELP": "Two labels for left and right endpoints, separated by |",
+      "HTML_SLIDER_QUESTION": "Include HTML slider question (0-100 scale) |"
     }
   }
 }

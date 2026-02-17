@@ -9,6 +9,7 @@ import { ExperimentState } from '../jspsych/experiment-state-class';
 import i18n from '../jspsych/i18n';
 import {
   createButton11Choice,
+  createHtmlSliderQuestion,
   createSliderQuestion,
   createTextQuestion,
 } from '../trials/validation-questions-trial';
@@ -170,6 +171,17 @@ export function buildValidationBlock(
               t('VALIDATION.BUTTON11_LEFT'),
               t('VALIDATION.BUTTON11_RIGHT'),
             ],
+          }),
+          on_finish: isLastQuestion
+            ? () => {
+                updateData(jsPsych.data.get());
+              }
+            : undefined,
+        } as Trial);
+      } else if (questionType === 'html_slider') {
+        timeline.push({
+          ...createHtmlSliderQuestion({
+            question: t('VALIDATION.HTML_SLIDER_QUESTION'),
           }),
           on_finish: isLastQuestion
             ? () => {
