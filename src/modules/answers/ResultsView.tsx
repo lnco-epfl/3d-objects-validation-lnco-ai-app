@@ -53,7 +53,7 @@ const ResultsView: FC = () => {
   return (
     <Stack spacing={2}>
       <Stack justifyContent="space-between" direction="row">
-        <Typography variant="h3">N-Back Results</Typography>
+        <Typography variant="h3">Validation Results</Typography>
         <Button
           variant="text"
           onClick={() => {

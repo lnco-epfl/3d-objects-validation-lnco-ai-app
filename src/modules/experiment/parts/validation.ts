@@ -8,9 +8,8 @@ import { DataCollection, JsPsych } from 'jspsych';
 import { ExperimentState } from '../jspsych/experiment-state-class';
 import i18n from '../jspsych/i18n';
 import {
-  createButton11Choice,
   createHtmlSliderQuestion,
-  createSliderQuestion,
+  createMultiChoiceQuestion,
   createTextQuestion,
 } from '../trials/validation-questions-trial';
 import {
@@ -56,15 +55,11 @@ export function buildValidationIntroduction(state: ExperimentState): Timeline {
 
   // Instructions
   if (!state.getGeneralSettings().skipInstructions) {
-    const validationSettings = state.getValidationTaskSettings();
-    const questionDescription = validationSettings.questionTypes
-      .map((qt) => {
-        if (qt === 'slider') return t('VALIDATION.SLIDER_INSTRUCTION');
-        if (qt === 'text') return t('VALIDATION.TEXT_INSTRUCTION');
-        if (qt === 'button11') return t('VALIDATION.BUTTON11_INSTRUCTION');
-        return '';
-      })
-      .join('<br><br>');
+    const questionDescription = [
+      t('VALIDATION.SLIDER_INSTRUCTION'),
+      t('VALIDATION.TEXT_INSTRUCTION'),
+      t('VALIDATION.MULTI_CHOICE_INSTRUCTION'),
+    ].join('<br><br>');
 
     timeline.push({
       type: jsPsychHtmlKeyboardResponse,
@@ -120,77 +115,112 @@ export function buildValidationBlock(
       response_ends_trial: false,
       toggle_photodiode: true,
       photodiode_element_id: 'photo-diode-element',
-      stimulus_height: 400,
-      stimulus_width: 400,
+      stimulus_size: 70,
     };
 
     timeline.push(createValidationStimulusTrial(stimulusParams) as Trial);
 
-    // Post-stimulus questions
-    validationSettings.questionTypes.forEach((questionType, questionIndex) => {
-      const isLastQuestion =
-        questionIndex === validationSettings.questionTypes.length - 1;
+    // Q1: I recognise the object
+    timeline.push(
+      createHtmlSliderQuestion({
+        question: t('VALIDATION.Q1_QUESTION'),
+        labels: [t('VALIDATION.Q1_LABEL_LEFT'), t('VALIDATION.Q1_LABEL_RIGHT')],
+        min: 1,
+        max: 100,
+      }) as Trial,
+    );
 
-      if (questionType === 'slider') {
-        timeline.push({
-          ...createSliderQuestion({
-            question: t('VALIDATION.SLIDER_QUESTION'),
-            min: validationSettings.sliderMin || 0,
-            max: validationSettings.sliderMax || 100,
-            labels: validationSettings.sliderLabels || [
-              'Not confident',
-              'Very confident',
-            ],
-          }),
-          // Save data after last question for this stimulus
-          on_finish: isLastQuestion
-            ? () => {
-                updateData(jsPsych.data.get());
-              }
-            : undefined,
-        } as Trial);
-      } else if (questionType === 'text') {
-        timeline.push({
-          ...createTextQuestion({
-            question: t('VALIDATION.TEXT_QUESTION'),
-            placeholder: t('VALIDATION.TEXT_PLACEHOLDER'),
-            rows: 3,
-            columns: 40,
-          }),
-          on_finish: isLastQuestion
-            ? () => {
-                updateData(jsPsych.data.get());
-              }
-            : undefined,
-        } as Trial);
-      } else if (questionType === 'button11') {
-        timeline.push({
-          ...createButton11Choice({
-            question: t('VALIDATION.BUTTON11_QUESTION'),
-            labels: [
-              t('VALIDATION.BUTTON11_LEFT'),
-              t('VALIDATION.BUTTON11_RIGHT'),
-            ],
-          }),
-          on_finish: isLastQuestion
-            ? () => {
-                updateData(jsPsych.data.get());
-              }
-            : undefined,
-        } as Trial);
-      } else if (questionType === 'html_slider') {
-        timeline.push({
-          ...createHtmlSliderQuestion({
-            question: t('VALIDATION.HTML_SLIDER_QUESTION'),
-          }),
-          on_finish: isLastQuestion
-            ? () => {
-                updateData(jsPsych.data.get());
-              }
-            : undefined,
-        } as Trial);
-      }
-    });
+    // Q2: Type the name of the object
+    timeline.push(
+      createTextQuestion({
+        question: `${t('VALIDATION.Q2_QUESTION')}<br><em>${t('VALIDATION.Q2_INSTRUCTION')}</em>`,
+        rows: 1,
+        columns: 30,
+      }) as Trial,
+    );
+
+    // Q3: I am confident about the name
+    timeline.push(
+      createHtmlSliderQuestion({
+        question: t('VALIDATION.Q3_QUESTION'),
+        labels: [t('VALIDATION.Q3_LABEL_LEFT'), t('VALIDATION.Q3_LABEL_RIGHT')],
+        min: 1,
+        max: 100,
+      }) as Trial,
+    );
+
+    // Q4: Select the most appropriate category
+    timeline.push(
+      createMultiChoiceQuestion({
+        question: t('VALIDATION.Q4_QUESTION'),
+        options: [
+          'Arts',
+          'Camping',
+          'Dessert',
+          'Food',
+          'Fruits',
+          'Hats',
+          'Kitchen',
+          'Sports',
+          'Toys',
+          'Vegetables',
+          'Unknown',
+        ],
+      }) as Trial,
+    );
+
+    // Q5: How well does the object fit in the chosen category
+    timeline.push(
+      createHtmlSliderQuestion({
+        question: t('VALIDATION.Q5_QUESTION'),
+        labels: [t('VALIDATION.Q5_LABEL_LEFT'), t('VALIDATION.Q5_LABEL_RIGHT')],
+        min: 1,
+        max: 100,
+      }) as Trial,
+    );
+
+    // Q6: The object is familiar to me
+    timeline.push(
+      createHtmlSliderQuestion({
+        question: t('VALIDATION.Q6_QUESTION'),
+        labels: [t('VALIDATION.Q6_LABEL_LEFT'), t('VALIDATION.Q6_LABEL_RIGHT')],
+        min: 1,
+        max: 100,
+      }) as Trial,
+    );
+
+    // Q7: How detailed (visually complex) does the object appear to you?
+    timeline.push(
+      createHtmlSliderQuestion({
+        question: t('VALIDATION.Q7_QUESTION'),
+        labels: [t('VALIDATION.Q7_LABEL_LEFT'), t('VALIDATION.Q7_LABEL_RIGHT')],
+        min: 1,
+        max: 100,
+      }) as Trial,
+    );
+
+    // Q8: How often do you encounter the object (at home)?
+    timeline.push(
+      createHtmlSliderQuestion({
+        question: t('VALIDATION.Q8_QUESTION'),
+        labels: [t('VALIDATION.Q8_LABEL_LEFT'), t('VALIDATION.Q8_LABEL_RIGHT')],
+        min: 1,
+        max: 100,
+      }) as Trial,
+    );
+
+    // Q9: How often do you use the object? (last question — save data)
+    timeline.push({
+      ...createHtmlSliderQuestion({
+        question: t('VALIDATION.Q9_QUESTION'),
+        labels: [t('VALIDATION.Q9_LABEL_LEFT'), t('VALIDATION.Q9_LABEL_RIGHT')],
+        min: 1,
+        max: 100,
+      }),
+      on_finish: () => {
+        updateData(jsPsych.data.get());
+      },
+    } as Trial);
 
     // Advance to next stimulus in block
     state.advanceStimulusInBlock();

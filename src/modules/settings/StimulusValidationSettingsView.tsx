@@ -1,14 +1,7 @@
 import { ChangeEvent, FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import {
-  Checkbox,
-  FormControlLabel,
-  FormGroup,
-  Stack,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Stack, TextField, Typography } from '@mui/material';
 
 import {
   ValidationTaskSettingsType,
@@ -43,18 +36,6 @@ const StimulusValidationSettingsView: FC<
     } else {
       saveSettings('validationTaskSettings', updated);
     }
-  };
-
-  const handleQuestionTypeToggle = (
-    questionType: 'slider' | 'text' | 'button11' | 'html_slider',
-  ): void => {
-    const questionTypes = validationTaskSettings.questionTypes || [];
-    const updated = questionTypes.includes(questionType)
-      ? questionTypes.filter(
-          (questionTypeItem) => questionTypeItem !== questionType,
-        )
-      : [...questionTypes, questionType];
-    handleChange('questionTypes', updated);
   };
 
   return (
@@ -109,98 +90,9 @@ const StimulusValidationSettingsView: FC<
         }
       />
 
-      <Typography variant="subtitle1">
-        {t('SETTINGS.QUESTION_TYPES')}
+      <Typography variant="body2" color="text.secondary">
+        {t('SETTINGS.QUESTIONS_INFO')}
       </Typography>
-
-      <FormGroup>
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={
-                validationTaskSettings.questionTypes?.includes('slider') ||
-                false
-              }
-              onChange={() => handleQuestionTypeToggle('slider')}
-            />
-          }
-          label={t('SETTINGS.SLIDER_QUESTION')}
-        />
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={
-                validationTaskSettings.questionTypes?.includes('text') || false
-              }
-              onChange={() => handleQuestionTypeToggle('text')}
-            />
-          }
-          label={t('SETTINGS.TEXT_QUESTION')}
-        />
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={
-                validationTaskSettings.questionTypes?.includes('button11') ||
-                false
-              }
-              onChange={() => handleQuestionTypeToggle('button11')}
-            />
-          }
-          label={t('SETTINGS.BUTTON11_QUESTION')}
-        />
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={
-                validationTaskSettings.questionTypes?.includes('html_slider') ||
-                false
-              }
-              onChange={() => handleQuestionTypeToggle('html_slider')}
-            />
-          }
-          label={t('SETTINGS.HTML_SLIDER_QUESTION')}
-        />
-      </FormGroup>
-
-      {validationTaskSettings.questionTypes?.includes('slider') && (
-        <>
-          <TextField
-            fullWidth
-            type="number"
-            label={t('SETTINGS.SLIDER_MIN')}
-            value={validationTaskSettings.sliderMin}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              handleChange('sliderMin', parseInt(e.target.value, 10))
-            }
-          />
-
-          <TextField
-            fullWidth
-            type="number"
-            label={t('SETTINGS.SLIDER_MAX')}
-            value={validationTaskSettings.sliderMax}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              handleChange('sliderMax', parseInt(e.target.value, 10))
-            }
-          />
-
-          <TextField
-            fullWidth
-            multiline
-            rows={2}
-            label={t('SETTINGS.SLIDER_LABELS')}
-            helperText={t('SETTINGS.SLIDER_LABELS_HELP')}
-            value={
-              validationTaskSettings.sliderLabels?.join('|') ||
-              'Not confident|Very confident'
-            }
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              handleChange('sliderLabels', e.target.value.split('|'))
-            }
-          />
-        </>
-      )}
     </Stack>
   );
 };

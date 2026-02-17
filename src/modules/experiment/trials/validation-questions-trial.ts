@@ -1,10 +1,9 @@
 /**
  * Post-stimulus question trials for validation task
- * Supports likert/slider, text, and 11-button choice questions
+ * Supports html-slider, text, and multi-choice questions
  */
-import jsPsychHtmlButtonResponse from '@jspsych/plugin-html-button-response';
 import jsPsychHtmlSliderResponse from '@jspsych/plugin-html-slider-response';
-import jsPsychSurveyLikert from '@jspsych/plugin-survey-likert';
+import jsPsychSurveyMultiChoice from '@jspsych/plugin-survey-multi-choice';
 import jsPsychSurveyText from '@jspsych/plugin-survey-text';
 
 export interface SliderQuestionParams {
@@ -25,39 +24,10 @@ export interface TextQuestionParams {
   columns?: number;
 }
 
-export interface Button11ChoiceParams {
+export interface MultiChoiceQuestionParams {
   question: string;
-  labels?: string[]; // Labels for endpoints [left, right]
-}
-
-/**
- * Creates a likert scale question trial
- * Fallback for slider since slider-response plugin is not installed
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function createSliderQuestion(params: SliderQuestionParams): any {
-  // Create 7-point likert scale by default
-  const scaleLabels = [
-    'Strongly Disagree',
-    'Disagree',
-    'Slightly Disagree',
-    'Neutral',
-    'Slightly Agree',
-    'Agree',
-    'Strongly Agree',
-  ];
-
-  return {
-    type: jsPsychSurveyLikert,
-    questions: [
-      {
-        prompt: params.question,
-        labels: scaleLabels,
-        required: true,
-      },
-    ],
-    button_label: 'Continue',
-  };
+  options: string[];
+  required?: boolean;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -65,12 +35,13 @@ export function createHtmlSliderQuestion(params: SliderQuestionParams): any {
   return {
     type: jsPsychHtmlSliderResponse,
     stimulus: `<p>${params.question}</p>`,
-    // stimulus: `<p>'I recognise the object'</p>`,
-    min: 0,
-    max: 100,
-    start: 50,
-    step: 1,
-    labels: ['Not well', 'Very well'],
+    min: params.min ?? 1,
+    max: params.max ?? 100,
+    start: params.start ?? 50,
+    step: params.step ?? 1,
+    slider_width: params.width ?? null,
+    labels: params.labels ?? ['1 not well', '100 very well'],
+    require_movement: params.require_movement ?? true,
     button_label: 'Continue',
   };
 }
@@ -86,8 +57,8 @@ export function createTextQuestion(params: TextQuestionParams): any {
       {
         prompt: params.question,
         placeholder: params.placeholder || '',
-        rows: params.rows || 3,
-        columns: params.columns || 40,
+        rows: params.rows || 1,
+        columns: params.columns || 30,
         required: true,
       },
     ],
@@ -96,36 +67,21 @@ export function createTextQuestion(params: TextQuestionParams): any {
 }
 
 /**
- * Creates an 11-point button choice trial
+ * Creates a multi-choice question trial
  */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function createButton11Choice(params: Button11ChoiceParams): any {
-  // Create buttons labeled 1-11
-  const buttons: string[] = [];
-
-  for (let i = 1; i <= 11; i += 1) {
-    buttons.push(i.toString());
-  }
-
-  const leftLabel = params.labels?.[0] || 'Not at all';
-  const rightLabel = params.labels?.[1] || 'Very much';
-
-  const stimulus = `
-    <div style="text-align: center; margin-bottom: 20px;">
-      <p>${params.question}</p>
-      <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 12px;">
-        <span>${leftLabel}</span>
-        <span>${rightLabel}</span>
-      </div>
-    </div>
-  `;
-
+export function createMultiChoiceQuestion(
+  params: MultiChoiceQuestionParams,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+): any {
   return {
-    type: jsPsychHtmlButtonResponse,
-    stimulus,
-    choices: buttons,
-    button_html: '<button class="jspsych-btn">%choice%</button>',
-    margin_vertical: '0px',
-    margin_horizontal: '8px',
+    type: jsPsychSurveyMultiChoice,
+    questions: [
+      {
+        prompt: params.question,
+        options: params.options,
+        required: params.required ?? true,
+      },
+    ],
+    button_label: 'Continue',
   };
 }

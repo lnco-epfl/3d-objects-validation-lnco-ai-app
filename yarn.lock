@@ -3694,12 +3694,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jspsych/plugin-survey-text@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@jspsych/plugin-survey-text@npm:2.0.0"
+"@jspsych/plugin-survey-multi-choice@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@jspsych/plugin-survey-multi-choice@npm:2.2.0"
   peerDependencies:
     jspsych: ">=7.1.0"
-  checksum: 10/3c07f88d9f6583bf7555a776abda50d44287b1cc5502e596e3931ac670b03c1c3ba10aa91d14217a16ef49f85a1965e5b7f076abbc347e7a25fd2e8ed9a6116e
+  checksum: 10/4c5e2d8a55fd5fc32a2aa5df5c829144839b887e1775c98561fdbdc5fc61a89bf97fa42bb2564c75c1a2d626c98974cdda5957f9d84a73b2b0f8f592666527b7
+  languageName: node
+  linkType: hard
+
+"@jspsych/plugin-survey-text@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@jspsych/plugin-survey-text@npm:2.1.0"
+  peerDependencies:
+    jspsych: ">=7.1.0"
+  checksum: 10/6fb805382f616758b1fac1901d01a1107daad197bd9cb0fd5d7d2797873c29a468d1faab770160761c04719f0ebbb75f153b9284e2e0f9aad6c722603ce6d0fb
   languageName: node
   linkType: hard
 
@@ -11651,7 +11660,8 @@ __metadata:
     "@jspsych/plugin-html-slider-response": "npm:^2.1.0"
     "@jspsych/plugin-preload": "npm:^1.1.2"
     "@jspsych/plugin-survey-likert": "npm:^1.1.3"
-    "@jspsych/plugin-survey-text": "npm:^2.0.0"
+    "@jspsych/plugin-survey-multi-choice": "npm:^2.2.0"
+    "@jspsych/plugin-survey-text": "npm:^2.1.0"
     "@jspsych/plugin-video-button-response": "npm:^2.0.0"
     "@jspsych/plugin-video-keyboard-response": "npm:^2.0.0"
     "@jspsych/test-utils": "npm:^1.2.0"
@@ -11699,6 +11709,7 @@ __metadata:
     file-saver: "npm:^2.0.5"
     husky: "npm:9.1.4"
     i18next: "npm:^23.9.0"
+    install: "npm:^0.13.0"
     jest: "npm:29.7.0"
     jest-environment-jsdom: "npm:29.7.0"
     jspsych: "npm:^8.0.1"
@@ -12172,6 +12183,13 @@ __metadata:
     through: "npm:^2.3.6"
     wrap-ansi: "npm:^6.0.1"
   checksum: 10/f642b9e5a94faaba54f277bdda2af0e0a6b592bd7f88c60e1614b5795b19336c7025e0c2923915d5f494f600a02fe8517413779a794415bb79a9563b061d68ab
+  languageName: node
+  linkType: hard
+
+"install@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "install@npm:0.13.0"
+  checksum: 10/587789343de46cfdac4d6f153ff1137f9620c80cbe7c97460ba549b79c55b97c47362ef1942cf977d5ddb7eedf2319104aa4c899f12e10788cb38b0e062b7a32
   languageName: node
   linkType: hard
 

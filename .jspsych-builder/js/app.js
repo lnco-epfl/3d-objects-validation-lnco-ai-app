@@ -1442,8 +1442,8 @@
             /*! ./message-trials */ './src/message-trials.js',
           );
         /**
-         * @title Cognitive Apathy Experiment
-         * @description This experiment aims to measure cognitive apathy using calibration and thermometer tasks.
+         * @title 3D Objects Validation
+         * @description This experiment aims to validate a 3D Objects dataset.
          * @version 0.1.0
          *
          * @assets assets/
@@ -57164,7 +57164,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         ],
         misc: ['assets/locales/en/ns1.json', 'assets/locales/fr/ns1.json'],
       },
-      title: 'Cognitive Apathy Experiment',
+      title: '3D Objects Validation',
       version: '0.1.0',
     }; // Injected by webpack
 

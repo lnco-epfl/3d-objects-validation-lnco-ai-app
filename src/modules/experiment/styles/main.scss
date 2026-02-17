@@ -3,10 +3,8 @@ body {
   font-family: Nunito, Roboto, sans-serif;
 }
 
-@media (display-mode: fullscreen) {
-  .player-view {
-    min-height: 100vh;
-  }
+.player-view {
+  min-height: 100vh;
 }
 
 /* Base font sizes for different classes */
@@ -44,7 +42,7 @@ body {
 }
 
 .jspsych-display-element {
-  background-color: #000000;
+  background-color: #d1d1d1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +75,7 @@ body {
   overflow-x: hidden;
   font-size: calc(var(--font-scale) * 1rem);
   gap: 5px;
-  color: #fff;
+  color: #222;
 }
 
 #jspsych-html-button-response-stimulus {
@@ -102,9 +100,9 @@ body {
 }
 
 #jspsych-progressbar-container {
-  color: #fff;
-  border-bottom: 1px solid #444;
-  background-color: #141414;
+  color: #222;
+  border-bottom: 1px solid #ddd;
+  background-color: #e8e8e8;
   margin-bottom: 1em;
   text-align: center;
   padding: 8px 0px;
@@ -269,10 +267,11 @@ ul li {
 }
 
 .jspsych-btn {
-  background-color: #000;
+  display: block;
+  margin: 20px auto 0;
+  background-color: #333;
   color: white;
   border: none;
-  padding: 5px;
   font-size: calc(var(--font-scale) * 1rem);
   padding: 6px 16px;
   line-height: 1.75;
@@ -325,6 +324,104 @@ ul li {
   font-size: calc(var(--font-scale) * 1rem);
 }
 
+/* Survey Text Response */
+#jspsych-survey-text {
+  text-align: center;
+}
+
+.jspsych-survey-text-question {
+  text-align: center;
+}
+
+.jspsych-survey-text-question input[type='text'],
+.jspsych-survey-text-question textarea {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 16px;
+  font-size: calc(var(--font-scale) * 1rem);
+  font-family: Nunito, Roboto, sans-serif;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.jspsych-survey-text-question input[type='text']:focus,
+.jspsych-survey-text-question textarea:focus {
+  border-color: #555;
+}
+
+#jspsych-survey-text-next {
+  margin-top: 20px;
+}
+
+/* HTML Slider Response */
+#jspsych-html-slider-response-wrapper {
+  width: 70vw;
+  max-width: 800px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#jspsych-html-slider-response-container {
+  width: 100%;
+  position: relative;
+}
+
+#jspsych-html-slider-response-response {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+/* Track styling */
+#jspsych-html-slider-response-response::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+#jspsych-html-slider-response-response::-moz-range-track {
+  height: 8px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Thumb styling */
+#jspsych-html-slider-response-response::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #333;
+  border-radius: 50%;
+  margin-top: -8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#jspsych-html-slider-response-response::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #333;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.jspsych-slider-label {
+  font-size: calc(var(--font-scale) * 0.9rem);
+  color: #444;
+}
+
 /** PhotoDiode class **/
 .photo-diode {
   width: 50px;
@@ -371,8 +468,8 @@ ul li {
 
 /* N-Back Task Styles */
 .nback-trial {
-  background-color: #000;
-  color: #fff;
+  background-color: #d1d1d1;
+  color: #222;
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -391,7 +488,7 @@ ul li {
 .number-display {
   font-size: calc(var(--font-scale, 1) * 8rem);
   font-weight: bold;
-  color: #fff;
+  color: #222;
 }
 
 .nback-intro,
@@ -405,7 +502,7 @@ ul li {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  color: #fff;
+  color: #222;
 }
 
 .nback-intro h1,

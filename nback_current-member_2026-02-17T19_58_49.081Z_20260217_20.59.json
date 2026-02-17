@@ -1,0 +1,2448 @@
+[
+  {
+    "success": true,
+    "timeout": false,
+    "failed_images": [],
+    "failed_audio": [],
+    "failed_video": [],
+    "trial_type": "preload",
+    "trial_index": 0,
+    "plugin_version": null,
+    "time_elapsed": 2
+  },
+  {
+    "success": true,
+    "rt": 11402,
+    "trial_type": "fullscreen",
+    "trial_index": 1,
+    "plugin_version": null,
+    "time_elapsed": 12406
+  },
+  {
+    "rt": 2015,
+    "stimulus": "\n        <div class=\"nback-instructions\">\n          <h2>Task Instructions</h2>\n          <p>In this task, you will see a sequence of single-digit numbers (0-9) appearing one at a time on the screen. Each number will be displayed for a short time, followed by a brief pause before the next number appears.</p>\n          <p>The task is to monitor the sequence and respond when you notice a pattern.</p>\n        </div>\n      ",
+    "response": 0,
+    "trial_type": "html-button-response",
+    "trial_index": 2,
+    "plugin_version": "2.0.0",
+    "time_elapsed": 14423
+  },
+  {
+    "rt": 1173,
+    "stimulus": "\n        <div class=\"nback-instructions\">\n          <h2>Task Rules</h2>\n          <p>When you see a number that matches the number from 2 positions back, press the spacebar (or click the mouse) as quickly as possible.</p>\n          <p>Example: If you see the sequence 3 - 7 - 3, you should respond when you see the second 3 because it matches the 3 from 2 position back. A sequence like 4 - 4 is not a match, because they are immediately adjacent, so you would NOT respond.</p>\n        </div>\n      ",
+    "response": 0,
+    "trial_type": "html-button-response",
+    "trial_index": 3,
+    "plugin_version": "2.0.0",
+    "time_elapsed": 15597
+  },
+  {
+    "rt": 724,
+    "stimulus": "\n        <div class=\"nback-instructions\">\n          <h2>How to Respond</h2>\n          <p>When you see a number that matches the target number from n positions back, respond immediately by pressing the spacebar or clicking the mouse.</p>\n          <p>When you see a number that does NOT match, do nothing. Simply wait for the next number to appear.</p>\n          <p class=\"important\">Try to be both fast and accurate. Both speed and accuracy are important for this task.</p>\n        </div>\n      ",
+    "response": 0,
+    "trial_type": "html-button-response",
+    "trial_index": 4,
+    "plugin_version": "2.0.0",
+    "time_elapsed": 16321
+  },
+  {
+    "rt": 1083,
+    "stimulus": "\n        <div class=\"nback-instructions\">\n          <h2>Practice Session</h2>\n          <p>Before the main task, you will complete a short practice session. This will help you get familiar with the task.</p>\n          <p>Are you ready to begin?</p>\n        </div>\n      ",
+    "response": 0,
+    "trial_type": "html-button-response",
+    "trial_index": 5,
+    "plugin_version": "2.0.0",
+    "time_elapsed": 17404
+  },
+  {
+    "rt": 1508,
+    "stimulus": "\n      <div class=\"sd-html\">\n        <h1>Stimulus Validation Task</h1>\n        <p>Thank you for participating. In this task, you will view images and answer questions about them.</p>\n        <p style=\"font-size: 0.8em; color: #666;\">Press spacebar to continue</p>\n      </div>\n    ",
+    "response": " ",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 6,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 18914
+  },
+  {
+    "rt": 13508,
+    "stimulus": "\n      <div class=\"sd-html\">\n        <h2>Task Overview</h2>\n        <p>You will see a series of images, one at a time.</p>\n        <p>After each image, you will be asked to answer one or more questions about what you saw.</p>\n        <p style=\"font-size: 0.8em; color: #666;\">Press spacebar to continue</p>\n      </div>\n    ",
+    "response": " ",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 7,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 32423
+  },
+  {
+    "rt": 1089,
+    "stimulus": "\n        <div class=\"sd-html\">\n          <h2>Instructions</h2>\n          <p>Please pay close attention to each image. Answer the questions honestly and to the best of your ability.</p>\n          <h3>Question Types:</h3>\n          For slider questions, move the slider to indicate your response on the scale.<br><br>For text questions, type your response in the text box.<br><br>For category questions, select the most appropriate option.\n          <p style=\"font-size: 0.8em; color: #666;\">Press spacebar to continue</p>\n        </div>\n      ",
+    "response": " ",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 8,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 33513
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_HarpObject_2026-01-23_15-42-38.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 9,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 36516
+  },
+  {
+    "rt": 6271,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 93,
+    "trial_type": "html-slider-response",
+    "trial_index": 10,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 42788
+  },
+  {
+    "rt": 4254,
+    "response": { "Q0": "harp" },
+    "trial_type": "survey-text",
+    "trial_index": 11,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 47046
+  },
+  {
+    "rt": 3148,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 97,
+    "trial_type": "html-slider-response",
+    "trial_index": 12,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 50196
+  },
+  {
+    "rt": 3783,
+    "response": { "Q0": "Dessert" },
+    "response_index": [2],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 13,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 53980
+  },
+  {
+    "rt": 2930,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 14,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 56913
+  },
+  {
+    "rt": 2111,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 69,
+    "trial_type": "html-slider-response",
+    "trial_index": 15,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 59025
+  },
+  {
+    "rt": 2525,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 16,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 61551
+  },
+  {
+    "rt": 2289,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 26,
+    "trial_type": "html-slider-response",
+    "trial_index": 17,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 63842
+  },
+  {
+    "rt": 2215,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 27,
+    "trial_type": "html-slider-response",
+    "trial_index": 18,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 66059
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_LampObject_2026-01-23_15-43-37.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 19,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 69062
+  },
+  {
+    "rt": 114655,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 78,
+    "trial_type": "html-slider-response",
+    "trial_index": 20,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 183719
+  },
+  {
+    "rt": 1828,
+    "response": { "Q0": "asdas" },
+    "trial_type": "survey-text",
+    "trial_index": 21,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 185551
+  },
+  {
+    "rt": 1908,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 76,
+    "trial_type": "html-slider-response",
+    "trial_index": 22,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 187460
+  },
+  {
+    "rt": 1582,
+    "response": { "Q0": "Hats" },
+    "response_index": [5],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 23,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 189043
+  },
+  {
+    "rt": 1973,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 72,
+    "trial_type": "html-slider-response",
+    "trial_index": 24,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 191017
+  },
+  {
+    "rt": 1741,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 84,
+    "trial_type": "html-slider-response",
+    "trial_index": 25,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 192759
+  },
+  {
+    "rt": 3049,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 76,
+    "trial_type": "html-slider-response",
+    "trial_index": 26,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 195809
+  },
+  {
+    "rt": 1632,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 78,
+    "trial_type": "html-slider-response",
+    "trial_index": 27,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 197443
+  },
+  {
+    "rt": 1624,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 68,
+    "trial_type": "html-slider-response",
+    "trial_index": 28,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 199068
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_MusicCenterObject_2026-01-23_15-45-05.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 29,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 202073
+  },
+  {
+    "rt": 3085,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 73,
+    "trial_type": "html-slider-response",
+    "trial_index": 30,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 205160
+  },
+  {
+    "rt": 2155,
+    "response": { "Q0": "sdf" },
+    "trial_type": "survey-text",
+    "trial_index": 31,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 207317
+  },
+  {
+    "rt": 1841,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 35,
+    "trial_type": "html-slider-response",
+    "trial_index": 32,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 209159
+  },
+  {
+    "rt": 1708,
+    "response": { "Q0": "Kitchen" },
+    "response_index": [6],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 33,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 210869
+  },
+  {
+    "rt": 1805,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 69,
+    "trial_type": "html-slider-response",
+    "trial_index": 34,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 212676
+  },
+  {
+    "rt": 1641,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 66,
+    "trial_type": "html-slider-response",
+    "trial_index": 35,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 214317
+  },
+  {
+    "rt": 1507,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 81,
+    "trial_type": "html-slider-response",
+    "trial_index": 36,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 215826
+  },
+  {
+    "rt": 1759,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 77,
+    "trial_type": "html-slider-response",
+    "trial_index": 37,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 217585
+  },
+  {
+    "rt": 1865,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 77,
+    "trial_type": "html-slider-response",
+    "trial_index": 38,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 219451
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_TheatreMasksObject_2026-01-23_15-46-20.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 39,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 222456
+  },
+  {
+    "rt": 1727,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 74,
+    "trial_type": "html-slider-response",
+    "trial_index": 40,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 224184
+  },
+  {
+    "rt": 1119,
+    "response": { "Q0": "asd" },
+    "trial_type": "survey-text",
+    "trial_index": 41,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 225305
+  },
+  {
+    "rt": 1782,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 69,
+    "trial_type": "html-slider-response",
+    "trial_index": 42,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 227088
+  },
+  {
+    "rt": 1582,
+    "response": { "Q0": "Hats" },
+    "response_index": [5],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 43,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 228672
+  },
+  {
+    "rt": 1599,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 71,
+    "trial_type": "html-slider-response",
+    "trial_index": 44,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 230272
+  },
+  {
+    "rt": 1948,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 24,
+    "trial_type": "html-slider-response",
+    "trial_index": 45,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 232222
+  },
+  {
+    "rt": 1891,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 77,
+    "trial_type": "html-slider-response",
+    "trial_index": 46,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 234113
+  },
+  {
+    "rt": 6524,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 35,
+    "trial_type": "html-slider-response",
+    "trial_index": 47,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 240638
+  },
+  {
+    "rt": 3057,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 70,
+    "trial_type": "html-slider-response",
+    "trial_index": 48,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 243697
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_CameraObject_2026-01-23_15-40-56.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 49,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 246701
+  },
+  {
+    "rt": 5020,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 73,
+    "trial_type": "html-slider-response",
+    "trial_index": 50,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 251722
+  },
+  {
+    "rt": 1372,
+    "response": { "Q0": "asd" },
+    "trial_type": "survey-text",
+    "trial_index": 51,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 253097
+  },
+  {
+    "rt": 2458,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 66,
+    "trial_type": "html-slider-response",
+    "trial_index": 52,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 255556
+  },
+  {
+    "rt": 2148,
+    "response": { "Q0": "Food" },
+    "response_index": [3],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 53,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 257705
+  },
+  {
+    "rt": 1931,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 31,
+    "trial_type": "html-slider-response",
+    "trial_index": 54,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 259639
+  },
+  {
+    "rt": 1811,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 74,
+    "trial_type": "html-slider-response",
+    "trial_index": 55,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 261451
+  },
+  {
+    "rt": 1708,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 81,
+    "trial_type": "html-slider-response",
+    "trial_index": 56,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 263160
+  },
+  {
+    "rt": 2015,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 75,
+    "trial_type": "html-slider-response",
+    "trial_index": 57,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 265176
+  },
+  {
+    "rt": 1483,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 73,
+    "trial_type": "html-slider-response",
+    "trial_index": 58,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 266660
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_FireworkObject_2026-01-23_15-42-09.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 59,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 269666
+  },
+  {
+    "rt": 2075,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 78,
+    "trial_type": "html-slider-response",
+    "trial_index": 60,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 271743
+  },
+  {
+    "rt": 1389,
+    "response": { "Q0": "asd" },
+    "trial_type": "survey-text",
+    "trial_index": 61,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 273134
+  },
+  {
+    "rt": 1741,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 25,
+    "trial_type": "html-slider-response",
+    "trial_index": 62,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 274877
+  },
+  {
+    "rt": 2773,
+    "response": { "Q0": "Arts" },
+    "response_index": [0],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 63,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 277651
+  },
+  {
+    "rt": 1760,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 97,
+    "trial_type": "html-slider-response",
+    "trial_index": 64,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 279413
+  },
+  {
+    "rt": 1883,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 65,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 281297
+  },
+  {
+    "rt": 2053,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 66,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 283351
+  },
+  {
+    "rt": 1994,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 67,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 285347
+  },
+  {
+    "rt": 1978,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 68,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 287326
+  },
+  {
+    "rt": 17453,
+    "stimulus": "\n      <div class=\"sd-html\">\n        <h2>Take a Break</h2>\n        <p>You have completed a block of stimuli. Feel free to take a short break.</p>\n        <p><strong>Remaining blocks: 3</strong></p>\n        <p style=\"font-size: 0.9em; color: #666;\">\n          Resuming in: <span id=\"countdown\">120</span>s\n        </p>\n        <p style=\"font-size: 0.8em; color: #888;\">Or press spacebar to continue immediately.</p>\n      </div>\n    ",
+    "response": " ",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 69,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 304783
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_DummyObject_2026-01-23_15-41-40.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 70,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 307786
+  },
+  {
+    "rt": 2042,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 97,
+    "trial_type": "html-slider-response",
+    "trial_index": 71,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 309830
+  },
+  {
+    "rt": 2064,
+    "response": { "Q0": "fasd" },
+    "trial_type": "survey-text",
+    "trial_index": 72,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 311897
+  },
+  {
+    "rt": 1866,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 73,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 313764
+  },
+  {
+    "rt": 1607,
+    "response": { "Q0": "Unknown" },
+    "response_index": [10],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 74,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 315372
+  },
+  {
+    "rt": 1799,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 93,
+    "trial_type": "html-slider-response",
+    "trial_index": 75,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 317172
+  },
+  {
+    "rt": 1895,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 9,
+    "trial_type": "html-slider-response",
+    "trial_index": 76,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 319068
+  },
+  {
+    "rt": 1844,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 77,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 320913
+  },
+  {
+    "rt": 3242,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 78,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 324156
+  },
+  {
+    "rt": 1809,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 79,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 325968
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_InkObject_2026-01-23_15-43-08.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 80,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 328973
+  },
+  {
+    "rt": 1559,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 81,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 330534
+  },
+  {
+    "rt": 1173,
+    "response": { "Q0": "asd" },
+    "trial_type": "survey-text",
+    "trial_index": 82,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 331711
+  },
+  {
+    "rt": 1830,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 21,
+    "trial_type": "html-slider-response",
+    "trial_index": 83,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 333542
+  },
+  {
+    "rt": 1642,
+    "response": { "Q0": "Hats" },
+    "response_index": [5],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 84,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 335186
+  },
+  {
+    "rt": 1614,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 85,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 336801
+  },
+  {
+    "rt": 1508,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 86,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 338310
+  },
+  {
+    "rt": 1816,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 87,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 340127
+  },
+  {
+    "rt": 1663,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 88,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 341792
+  },
+  {
+    "rt": 2449,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 99,
+    "trial_type": "html-slider-response",
+    "trial_index": 89,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 344243
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_PaletteObject_2026-01-23_15-45-19.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 90,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 347245
+  },
+  {
+    "rt": 2109,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 91,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 349355
+  },
+  {
+    "rt": 2927,
+    "response": { "Q0": "gdfgd" },
+    "trial_type": "survey-text",
+    "trial_index": 92,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 352285
+  },
+  {
+    "rt": 1686,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 93,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 353972
+  },
+  {
+    "rt": 2212,
+    "response": { "Q0": "Vegetables" },
+    "response_index": [9],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 94,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 356185
+  },
+  {
+    "rt": 1732,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 95,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 357918
+  },
+  {
+    "rt": 1729,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 96,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 359647
+  },
+  {
+    "rt": 1749,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 11,
+    "trial_type": "html-slider-response",
+    "trial_index": 97,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 361397
+  },
+  {
+    "rt": 1849,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 98,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 363248
+  },
+  {
+    "rt": 2432,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 99,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 365682
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_ClapperBoardObject_2026-01-23_15-41-10.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 100,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 368686
+  },
+  {
+    "rt": 2064,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 101,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 370751
+  },
+  {
+    "rt": 1440,
+    "response": { "Q0": "gsdg" },
+    "trial_type": "survey-text",
+    "trial_index": 102,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 372193
+  },
+  {
+    "rt": 2666,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 103,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 374860
+  },
+  {
+    "rt": 2073,
+    "response": { "Q0": "Kitchen" },
+    "response_index": [6],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 104,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 376935
+  },
+  {
+    "rt": 2102,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 105,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 379038
+  },
+  {
+    "rt": 1845,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 94,
+    "trial_type": "html-slider-response",
+    "trial_index": 106,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 380884
+  },
+  {
+    "rt": 1717,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 107,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 382602
+  },
+  {
+    "rt": 2072,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 108,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 384676
+  },
+  {
+    "rt": 1758,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 109,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 386436
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_SaxophoneObject_2026-01-23_15-45-34.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 110,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 389440
+  },
+  {
+    "rt": 1901,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 111,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 391343
+  },
+  {
+    "rt": 2082,
+    "response": { "Q0": "qweqwe" },
+    "trial_type": "survey-text",
+    "trial_index": 112,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 393426
+  },
+  {
+    "rt": 2558,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 113,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 395985
+  },
+  {
+    "rt": 1958,
+    "response": { "Q0": "Vegetables" },
+    "response_index": [9],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 114,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 397944
+  },
+  {
+    "rt": 1696,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 91,
+    "trial_type": "html-slider-response",
+    "trial_index": 115,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 399644
+  },
+  {
+    "rt": 1722,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 116,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 401315
+  },
+  {
+    "rt": 3207,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 117,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 404523
+  },
+  {
+    "rt": 2016,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 118,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 406540
+  },
+  {
+    "rt": 1990,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 13,
+    "trial_type": "html-slider-response",
+    "trial_index": 119,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 408532
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_EaselObject_2026-01-23_15-41-54.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 120,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 411536
+  },
+  {
+    "rt": 2111,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 121,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 413648
+  },
+  {
+    "rt": 4005,
+    "response": { "Q0": "7567" },
+    "trial_type": "survey-text",
+    "trial_index": 122,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 417657
+  },
+  {
+    "rt": 1795,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 123,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 419453
+  },
+  {
+    "rt": 1628,
+    "response": { "Q0": "Vegetables" },
+    "response_index": [9],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 124,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 421082
+  },
+  {
+    "rt": 1882,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 125,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 422966
+  },
+  {
+    "rt": 1781,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 15,
+    "trial_type": "html-slider-response",
+    "trial_index": 126,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 424748
+  },
+  {
+    "rt": 2033,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 13,
+    "trial_type": "html-slider-response",
+    "trial_index": 127,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 426782
+  },
+  {
+    "rt": 3553,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 91,
+    "trial_type": "html-slider-response",
+    "trial_index": 128,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 430336
+  },
+  {
+    "rt": 1840,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 95,
+    "trial_type": "html-slider-response",
+    "trial_index": 129,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 432177
+  },
+  {
+    "rt": 1415,
+    "stimulus": "\n      <div class=\"sd-html\">\n        <h2>Take a Break</h2>\n        <p>You have completed a block of stimuli. Feel free to take a short break.</p>\n        <p><strong>Remaining blocks: 2</strong></p>\n        <p style=\"font-size: 0.9em; color: #666;\">\n          Resuming in: <span id=\"countdown\">120</span>s\n        </p>\n        <p style=\"font-size: 0.8em; color: #888;\">Or press spacebar to continue immediately.</p>\n      </div>\n    ",
+    "response": " ",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 130,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 433594
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_JoystickObject_2026-01-23_15-43-22.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 131,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 436599
+  },
+  {
+    "rt": 1652,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 2,
+    "trial_type": "html-slider-response",
+    "trial_index": 132,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 438252
+  },
+  {
+    "rt": 2281,
+    "response": { "Q0": "865" },
+    "trial_type": "survey-text",
+    "trial_index": 133,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 440535
+  },
+  {
+    "rt": 1849,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 86,
+    "trial_type": "html-slider-response",
+    "trial_index": 134,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 442385
+  },
+  {
+    "rt": 1950,
+    "response": { "Q0": "Vegetables" },
+    "response_index": [9],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 135,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 444336
+  },
+  {
+    "rt": 1881,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 136,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 446219
+  },
+  {
+    "rt": 1732,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 98,
+    "trial_type": "html-slider-response",
+    "trial_index": 137,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 447952
+  },
+  {
+    "rt": 1541,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 88,
+    "trial_type": "html-slider-response",
+    "trial_index": 138,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 449494
+  },
+  {
+    "rt": 1724,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 20,
+    "trial_type": "html-slider-response",
+    "trial_index": 139,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 451219
+  },
+  {
+    "rt": 2750,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 92,
+    "trial_type": "html-slider-response",
+    "trial_index": 140,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 453970
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_LaptopObject_2026-01-23_15-43-51.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 141,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 456975
+  },
+  {
+    "rt": 2886,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 96,
+    "trial_type": "html-slider-response",
+    "trial_index": 142,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 459861
+  },
+  {
+    "rt": 2463,
+    "response": { "Q0": "11" },
+    "trial_type": "survey-text",
+    "trial_index": 143,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 462327
+  },
+  {
+    "rt": 1674,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 144,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 464002
+  },
+  {
+    "rt": 3224,
+    "response": { "Q0": "Kitchen" },
+    "response_index": [6],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 145,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 467227
+  },
+  {
+    "rt": 1730,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 146,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 468960
+  },
+  {
+    "rt": 2462,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 147,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 471422
+  },
+  {
+    "rt": 1854,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 148,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 473277
+  },
+  {
+    "rt": 1865,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 7,
+    "trial_type": "html-slider-response",
+    "trial_index": 149,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 475143
+  },
+  {
+    "rt": 1699,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 87,
+    "trial_type": "html-slider-response",
+    "trial_index": 150,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 476843
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_DjembeObject_2026-01-23_15-41-25.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 151,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 479845
+  },
+  {
+    "rt": 1680,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 11,
+    "trial_type": "html-slider-response",
+    "trial_index": 152,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 481527
+  },
+  {
+    "rt": 2081,
+    "response": { "Q0": "00" },
+    "trial_type": "survey-text",
+    "trial_index": 153,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 483610
+  },
+  {
+    "rt": 1900,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 154,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 485510
+  },
+  {
+    "rt": 1900,
+    "response": { "Q0": "Dessert" },
+    "response_index": [2],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 155,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 487411
+  },
+  {
+    "rt": 1696,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 90,
+    "trial_type": "html-slider-response",
+    "trial_index": 156,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 489110
+  },
+  {
+    "rt": 1890,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 12,
+    "trial_type": "html-slider-response",
+    "trial_index": 157,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 491002
+  },
+  {
+    "rt": 2099,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 99,
+    "trial_type": "html-slider-response",
+    "trial_index": 158,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 493101
+  },
+  {
+    "rt": 1770,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 11,
+    "trial_type": "html-slider-response",
+    "trial_index": 159,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 494873
+  },
+  {
+    "rt": 1619,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 89,
+    "trial_type": "html-slider-response",
+    "trial_index": 160,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 496493
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_HeadphonesObject_2026-01-23_15-42-53.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 161,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 499497
+  },
+  {
+    "rt": 5445,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 91,
+    "trial_type": "html-slider-response",
+    "trial_index": 162,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 504943
+  },
+  {
+    "rt": 1879,
+    "response": { "Q0": "00" },
+    "trial_type": "survey-text",
+    "trial_index": 163,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 506824
+  },
+  {
+    "rt": 2219,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 11,
+    "trial_type": "html-slider-response",
+    "trial_index": 164,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 509044
+  },
+  {
+    "rt": 1906,
+    "response": { "Q0": "Camping" },
+    "response_index": [1],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 165,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 510953
+  },
+  {
+    "rt": 1871,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 9,
+    "trial_type": "html-slider-response",
+    "trial_index": 166,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 512827
+  },
+  {
+    "rt": 1765,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 167,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 514594
+  },
+  {
+    "rt": 2031,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 16,
+    "trial_type": "html-slider-response",
+    "trial_index": 168,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 516626
+  },
+  {
+    "rt": 1841,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 82,
+    "trial_type": "html-slider-response",
+    "trial_index": 169,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 518468
+  },
+  {
+    "rt": 2524,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 23,
+    "trial_type": "html-slider-response",
+    "trial_index": 170,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 520994
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_GuitarObject_2026-01-23_15-42-24.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 171,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 523999
+  },
+  {
+    "rt": 1650,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 84,
+    "trial_type": "html-slider-response",
+    "trial_index": 172,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 525651
+  },
+  {
+    "rt": 2445,
+    "response": { "Q0": "hjkhj" },
+    "trial_type": "survey-text",
+    "trial_index": 173,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 528099
+  },
+  {
+    "rt": 2480,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 100,
+    "trial_type": "html-slider-response",
+    "trial_index": 174,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 530580
+  },
+  {
+    "rt": 2274,
+    "response": { "Q0": "Camping" },
+    "response_index": [1],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 175,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 532855
+  },
+  {
+    "rt": 1982,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 17,
+    "trial_type": "html-slider-response",
+    "trial_index": 176,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 534840
+  },
+  {
+    "rt": 1764,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 91,
+    "trial_type": "html-slider-response",
+    "trial_index": 177,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 536606
+  },
+  {
+    "rt": 1735,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 5,
+    "trial_type": "html-slider-response",
+    "trial_index": 178,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 538343
+  },
+  {
+    "rt": 1835,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 94,
+    "trial_type": "html-slider-response",
+    "trial_index": 179,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 540180
+  },
+  {
+    "rt": 1662,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 41,
+    "trial_type": "html-slider-response",
+    "trial_index": 180,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 541843
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_Music column-1Object_2026-01-23_15-44-35.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 181,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 544848
+  },
+  {
+    "rt": 2111,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 31,
+    "trial_type": "html-slider-response",
+    "trial_index": 182,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 546960
+  },
+  {
+    "rt": 3589,
+    "response": { "Q0": "11" },
+    "trial_type": "survey-text",
+    "trial_index": 183,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 550554
+  },
+  {
+    "rt": 4796,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 28,
+    "trial_type": "html-slider-response",
+    "trial_index": 184,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 555352
+  },
+  {
+    "rt": 2861,
+    "response": { "Q0": "Hats" },
+    "response_index": [5],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 185,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 558214
+  },
+  {
+    "rt": 1539,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 80,
+    "trial_type": "html-slider-response",
+    "trial_index": 186,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 559755
+  },
+  {
+    "rt": 1945,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 24,
+    "trial_type": "html-slider-response",
+    "trial_index": 187,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 561701
+  },
+  {
+    "rt": 1781,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 71,
+    "trial_type": "html-slider-response",
+    "trial_index": 188,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 563484
+  },
+  {
+    "rt": 1824,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 28,
+    "trial_type": "html-slider-response",
+    "trial_index": 189,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 565309
+  },
+  {
+    "rt": 2591,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 89,
+    "trial_type": "html-slider-response",
+    "trial_index": 190,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 567901
+  },
+  {
+    "rt": 1475,
+    "stimulus": "\n      <div class=\"sd-html\">\n        <h2>Take a Break</h2>\n        <p>You have completed a block of stimuli. Feel free to take a short break.</p>\n        <p><strong>Remaining blocks: 1</strong></p>\n        <p style=\"font-size: 0.9em; color: #666;\">\n          Resuming in: <span id=\"countdown\">120</span>s\n        </p>\n        <p style=\"font-size: 0.8em; color: #888;\">Or press spacebar to continue immediately.</p>\n      </div>\n    ",
+    "response": " ",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 191,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 569380
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_MicrophoneObject_2026-01-23_15-44-21.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 192,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 572382
+  },
+  {
+    "rt": 1709,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 25,
+    "trial_type": "html-slider-response",
+    "trial_index": 193,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 574092
+  },
+  {
+    "rt": 3123,
+    "response": { "Q0": "gerv" },
+    "trial_type": "survey-text",
+    "trial_index": 194,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 577217
+  },
+  {
+    "rt": 1640,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 76,
+    "trial_type": "html-slider-response",
+    "trial_index": 195,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 578858
+  },
+  {
+    "rt": 1705,
+    "response": { "Q0": "Food" },
+    "response_index": [3],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 196,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 580564
+  },
+  {
+    "rt": 1750,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 24,
+    "trial_type": "html-slider-response",
+    "trial_index": 197,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 582317
+  },
+  {
+    "rt": 2336,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 97,
+    "trial_type": "html-slider-response",
+    "trial_index": 198,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 584655
+  },
+  {
+    "rt": 2012,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 11,
+    "trial_type": "html-slider-response",
+    "trial_index": 199,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 586668
+  },
+  {
+    "rt": 1865,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 200,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 588534
+  },
+  {
+    "rt": 1966,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 62,
+    "trial_type": "html-slider-response",
+    "trial_index": 201,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 590500
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_SetOfBrushesObject_2026-01-23_15-45-49.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 202,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 593504
+  },
+  {
+    "rt": 1712,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 19,
+    "trial_type": "html-slider-response",
+    "trial_index": 203,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 595218
+  },
+  {
+    "rt": 1578,
+    "response": { "Q0": "asd" },
+    "trial_type": "survey-text",
+    "trial_index": 204,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 596800
+  },
+  {
+    "rt": 1825,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 72,
+    "trial_type": "html-slider-response",
+    "trial_index": 205,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 598626
+  },
+  {
+    "rt": 1806,
+    "response": { "Q0": "Unknown" },
+    "response_index": [10],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 206,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 600434
+  },
+  {
+    "rt": 1974,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 14,
+    "trial_type": "html-slider-response",
+    "trial_index": 207,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 602409
+  },
+  {
+    "rt": 1839,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 89,
+    "trial_type": "html-slider-response",
+    "trial_index": 208,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 604250
+  },
+  {
+    "rt": 1532,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 73,
+    "trial_type": "html-slider-response",
+    "trial_index": 209,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 605783
+  },
+  {
+    "rt": 3466,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 68,
+    "trial_type": "html-slider-response",
+    "trial_index": 210,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 609250
+  },
+  {
+    "rt": 1757,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 211,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 611009
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_TypewriterObject_2026-01-23_15-46-35.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 212,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 614013
+  },
+  {
+    "rt": 1969,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 213,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 615983
+  },
+  {
+    "rt": 1949,
+    "response": { "Q0": "gdf" },
+    "trial_type": "survey-text",
+    "trial_index": 214,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 617933
+  },
+  {
+    "rt": 1670,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 215,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 619604
+  },
+  {
+    "rt": 2333,
+    "response": { "Q0": "Camping" },
+    "response_index": [1],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 216,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 621939
+  },
+  {
+    "rt": 1846,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 17,
+    "trial_type": "html-slider-response",
+    "trial_index": 217,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 623787
+  },
+  {
+    "rt": 1650,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 84,
+    "trial_type": "html-slider-response",
+    "trial_index": 218,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 625437
+  },
+  {
+    "rt": 1807,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 22,
+    "trial_type": "html-slider-response",
+    "trial_index": 219,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 627246
+  },
+  {
+    "rt": 1457,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 77,
+    "trial_type": "html-slider-response",
+    "trial_index": 220,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 628704
+  },
+  {
+    "rt": 2015,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 64,
+    "trial_type": "html-slider-response",
+    "trial_index": 221,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 630721
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_MaracasObject_2026-01-23_15-44-06.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 222,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 633725
+  },
+  {
+    "rt": 2761,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 73,
+    "trial_type": "html-slider-response",
+    "trial_index": 223,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 636487
+  },
+  {
+    "rt": 1859,
+    "response": { "Q0": "11" },
+    "trial_type": "survey-text",
+    "trial_index": 224,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 638350
+  },
+  {
+    "rt": 2577,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 15,
+    "trial_type": "html-slider-response",
+    "trial_index": 225,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 640929
+  },
+  {
+    "rt": 1733,
+    "response": { "Q0": "Kitchen" },
+    "response_index": [6],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 226,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 642663
+  },
+  {
+    "rt": 1765,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 74,
+    "trial_type": "html-slider-response",
+    "trial_index": 227,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 644429
+  },
+  {
+    "rt": 2549,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 78,
+    "trial_type": "html-slider-response",
+    "trial_index": 228,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 646979
+  },
+  {
+    "rt": 1691,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 89,
+    "trial_type": "html-slider-response",
+    "trial_index": 229,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 648672
+  },
+  {
+    "rt": 1572,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 230,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 650245
+  },
+  {
+    "rt": 3016,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 24,
+    "trial_type": "html-slider-response",
+    "trial_index": 231,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 653262
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_SprayCansObject_2026-01-23_15-46-03.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 232,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 656267
+  },
+  {
+    "rt": 3502,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 79,
+    "trial_type": "html-slider-response",
+    "trial_index": 233,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 659770
+  },
+  {
+    "rt": 2212,
+    "response": { "Q0": "hfgb " },
+    "trial_type": "survey-text",
+    "trial_index": 234,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 661984
+  },
+  {
+    "rt": 2976,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 76,
+    "trial_type": "html-slider-response",
+    "trial_index": 235,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 664962
+  },
+  {
+    "rt": 2353,
+    "response": { "Q0": "Dessert" },
+    "response_index": [2],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 236,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 667316
+  },
+  {
+    "rt": 2020,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 86,
+    "trial_type": "html-slider-response",
+    "trial_index": 237,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 669337
+  },
+  {
+    "rt": 3891,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 20,
+    "trial_type": "html-slider-response",
+    "trial_index": 238,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 673229
+  },
+  {
+    "rt": 1813,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 68,
+    "trial_type": "html-slider-response",
+    "trial_index": 239,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 675043
+  },
+  {
+    "rt": 1972,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 77,
+    "trial_type": "html-slider-response",
+    "trial_index": 240,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 677016
+  },
+  {
+    "rt": 1917,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 25,
+    "trial_type": "html-slider-response",
+    "trial_index": 241,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 678934
+  },
+  {
+    "rt": null,
+    "stimulus": "<img src=\"/assets/images/stimuli/Screenshot_Music column-2Object_2026-01-23_15-44-50.png\" style=\"width: 70vw; height: 70vh; object-fit: contain;\" />",
+    "response": null,
+    "trial_type": "html-keyboard-response",
+    "trial_index": 242,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 681939
+  },
+  {
+    "rt": 2022,
+    "stimulus": "<p>I recognise the object</p>",
+    "slider_start": 50,
+    "response": 76,
+    "trial_type": "html-slider-response",
+    "trial_index": 243,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 683962
+  },
+  {
+    "rt": 1366,
+    "response": { "Q0": "sdf" },
+    "trial_type": "survey-text",
+    "trial_index": 244,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 685331
+  },
+  {
+    "rt": 2021,
+    "stimulus": "<p>I am confident about the name</p>",
+    "slider_start": 50,
+    "response": 1,
+    "trial_type": "html-slider-response",
+    "trial_index": 245,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 687353
+  },
+  {
+    "rt": 2158,
+    "response": { "Q0": "Dessert" },
+    "response_index": [2],
+    "question_order": [0],
+    "trial_type": "survey-multi-choice",
+    "trial_index": 246,
+    "plugin_version": "2.2.0",
+    "time_elapsed": 689513
+  },
+  {
+    "rt": 1764,
+    "stimulus": "<p>How well does the object fit in the chosen category</p>",
+    "slider_start": 50,
+    "response": 69,
+    "trial_type": "html-slider-response",
+    "trial_index": 247,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 691279
+  },
+  {
+    "rt": 1606,
+    "stimulus": "<p>The object is familiar to me</p>",
+    "slider_start": 50,
+    "response": 83,
+    "trial_type": "html-slider-response",
+    "trial_index": 248,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 692887
+  },
+  {
+    "rt": 1557,
+    "stimulus": "<p>How detailed (visually complex) does the object appear to you?</p>",
+    "slider_start": 50,
+    "response": 22,
+    "trial_type": "html-slider-response",
+    "trial_index": 249,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 694445
+  },
+  {
+    "rt": 1499,
+    "stimulus": "<p>How often do you encounter the object (at home)?</p>",
+    "slider_start": 50,
+    "response": 79,
+    "trial_type": "html-slider-response",
+    "trial_index": 250,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 695945
+  },
+  {
+    "rt": 2857,
+    "stimulus": "<p>How often do you use the object?</p>",
+    "slider_start": 50,
+    "response": 9,
+    "trial_type": "html-slider-response",
+    "trial_index": 251,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 698803
+  },
+  {
+    "rt": 36995,
+    "stimulus": "\n      <div class=\"sd-html\">\n        <h2>Task Complete</h2>\n        <p>Thank you for completing the stimulus validation task!</p>\n        <p style=\"font-size: 0.9em; color: #666;\">\n          You viewed: 4 blocks\n        </p>\n        <p style=\"font-size: 0.8em; color: #666;\">Press spacebar to continue</p>\n      </div>\n    ",
+    "response": " ",
+    "trial_type": "html-keyboard-response",
+    "trial_index": 252,
+    "plugin_version": "2.1.0",
+    "time_elapsed": 735800
+  }
+]

@@ -10,8 +10,7 @@ export interface ValidationStimulusTrialParams {
   stimulus_duration: number; // How long to show stimulus (ms)
   trial_duration: number; // Total trial duration (ms)
   response_ends_trial: boolean;
-  stimulus_height?: number; // Optional stimulus height
-  stimulus_width?: number; // Optional stimulus width
+  stimulus_size?: number; // Stimulus size as percentage of viewport width (vw)
   toggle_photodiode?: boolean; // Whether to toggle photodiode
   photodiode_element_id?: string; // ID of photodiode element
 }
@@ -25,14 +24,9 @@ export function createValidationStimulusTrial(
   params: ValidationStimulusTrialParams,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): any {
-  const heightStyle = params.stimulus_height
-    ? `height: ${params.stimulus_height}px;`
-    : '';
-  const widthStyle = params.stimulus_width
-    ? `width: ${params.stimulus_width}px;`
-    : '';
+  const size = params.stimulus_size ?? 30;
 
-  const stimulus = `<img src="${params.stimulus}" style="${widthStyle} ${heightStyle} object-fit: contain;" />`;
+  const stimulus = `<img src="${params.stimulus}" style="width: ${size}vw; height: ${size}vh; object-fit: contain;" />`;
 
   return {
     type: jsPsychHtmlKeyboardResponse,
