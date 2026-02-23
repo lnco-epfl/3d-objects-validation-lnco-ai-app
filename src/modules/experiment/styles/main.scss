@@ -283,6 +283,25 @@ ul li {
     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   text-transform: capitalize;
   text-align: center;
+
+  &--secondary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #999;
+    box-shadow: none;
+  }
+}
+
+.jspsych-btn-group-flex {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+
+  .jspsych-btn {
+    display: inline-block;
+    margin: 0;
+  }
 }
 
 .jspsych-btn-progress-bar {
@@ -360,9 +379,9 @@ ul li {
 
 /* HTML Slider Response */
 #jspsych-html-slider-response-wrapper {
-  width: 70vw;
+  width: 60vw;
   max-width: 800px;
-  padding: 0 20px;
+  padding: 0 60px;
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;

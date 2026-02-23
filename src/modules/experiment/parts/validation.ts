@@ -1,6 +1,6 @@
 /**
  * Stimulus Validation Task Timeline Builders
- * Builds introduction, validation blocks, breaks, and completion screens
+ * Builds validation blocks, breaks, and completion screens
  */
 import jsPsychHtmlKeyboardResponse from '@jspsych/plugin-html-keyboard-response';
 import { DataCollection, JsPsych } from 'jspsych';
@@ -19,65 +19,6 @@ import {
 import { Timeline, Trial } from '../utils/types';
 
 const t = i18n.t.bind(i18n);
-
-/**
- * Build introduction and instructions
- */
-export function buildValidationIntroduction(state: ExperimentState): Timeline {
-  const timeline: Timeline = [];
-
-  // Welcome screen
-  timeline.push({
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: `
-      <div class="sd-html">
-        <h1>${t('VALIDATION.WELCOME_TITLE')}</h1>
-        <p>${t('VALIDATION.WELCOME_MESSAGE')}</p>
-        <p style="font-size: 0.8em; color: #666;">Press spacebar to continue</p>
-      </div>
-    `,
-    choices: [' '],
-  } as Trial);
-
-  // Task description
-  timeline.push({
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: `
-      <div class="sd-html">
-        <h2>${t('VALIDATION.TASK_DESCRIPTION_TITLE')}</h2>
-        <p>${t('VALIDATION.TASK_DESCRIPTION_1')}</p>
-        <p>${t('VALIDATION.TASK_DESCRIPTION_2')}</p>
-        <p style="font-size: 0.8em; color: #666;">Press spacebar to continue</p>
-      </div>
-    `,
-    choices: [' '],
-  } as Trial);
-
-  // Instructions
-  if (!state.getGeneralSettings().skipInstructions) {
-    const questionDescription = [
-      t('VALIDATION.SLIDER_INSTRUCTION'),
-      t('VALIDATION.TEXT_INSTRUCTION'),
-      t('VALIDATION.MULTI_CHOICE_INSTRUCTION'),
-    ].join('<br><br>');
-
-    timeline.push({
-      type: jsPsychHtmlKeyboardResponse,
-      stimulus: `
-        <div class="sd-html">
-          <h2>${t('VALIDATION.INSTRUCTIONS_TITLE')}</h2>
-          <p>${t('VALIDATION.INSTRUCTIONS_OVERVIEW')}</p>
-          <h3>${t('VALIDATION.INSTRUCTIONS_QUESTIONS')}</h3>
-          ${questionDescription}
-          <p style="font-size: 0.8em; color: #666;">Press spacebar to continue</p>
-        </div>
-      `,
-      choices: [' '],
-    } as Trial);
-  }
-
-  return timeline;
-}
 
 /**
  * Build a single validation block with stimuli and questions
@@ -313,15 +254,6 @@ export function buildValidationTask(
 
   // Initialize validation task with stimuli
   state.initializeValidationTask(stimuliList);
-
-  // Add introduction
-  timeline.push({
-    timeline: buildValidationIntroduction(state),
-    on_timeline_start() {
-      // eslint-disable-next-line no-param-reassign
-      if (jsPsych.progressBar) jsPsych.progressBar.progress = 0.1;
-    },
-  });
 
   const totalBlocks = state.getTotalBlocks();
 

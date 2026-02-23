@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a **Graasp App** implementing an **N-back working memory task** using jsPsych. Built with React 18 + TypeScript + Vite, it integrates with the Graasp platform to provide configurable cognitive neuroscience experiments with practice, main task, and optional breaks.
+This is a **Graasp App** implementing an **3D Objects Validation Task** using jsPsych. Built with React 18 + TypeScript + Vite, it integrates with the Graasp platform to provide configurable cognitive neuroscience experiments with practice, main task, and optional breaks.
 
 ## Architecture
 

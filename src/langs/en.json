@@ -115,7 +115,11 @@
       "COMPLETION_TITLE": "Task Complete",
       "COMPLETION_MESSAGE": "Thank you for completing the stimulus validation task!",
       "COMPLETION_STATS": "You viewed",
-      "HTML_SLIDER_INSTRUCTION": "For slider questions, move the slider to indicate your response on the scale."
+      "HTML_SLIDER_INSTRUCTION": "For slider questions, move the slider to indicate your response on the scale.",
+      "START_BUTTON": "Start Fullscreen",
+      "CONTINUE_BUTTON": "Continue",
+      "BACK_BUTTON": "Back",
+      "START_EXPERIMENT_BUTTON": "Start Experiment"
     },
     "SETTINGS": {
       "NBACK_TITLE": "N-Back Task Settings",

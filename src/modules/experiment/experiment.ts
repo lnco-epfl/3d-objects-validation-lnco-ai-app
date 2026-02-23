@@ -1,6 +1,6 @@
 /**
- * @title N-Back Working Memory Task
- * @description This experiment implements an N-back working memory task with configurable settings.
+ * @title 3D Objects Validation Task
+ * @description This experiment implements an 3D Objects Validation Task with configurable settings.
  * @version 1.0.0
  *
  * @assets assets/

@@ -4,7 +4,7 @@
 
 A React TypeScript Graasp app implementing two cognitive experiments for psychological/neuroscience research:
 
-- **N-Back Working Memory Task**: Classic working memory test with configurable difficulty levels
+- **3D Objects Validation Task**: Classic working memory test with configurable difficulty levels
 - **Stimulus Validation Task**: Vision science experiment with post-stimulus questions and EEG/MEG photodiode support
 
 ## Tech Stack
